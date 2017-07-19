@@ -2672,6 +2672,203 @@ h1.logo {
   margin-top: 35px;
   margin-left: -30px;
   margin-right: -30px; }
+.row.faq {}
+.row.faq .tab-content {
+    font-size: 14px;
+    line-height: 24px;
+    border: solid 1px #435469;
+    border-radius: 2px;
+    background-color: #fdfdfd;
+    padding: 30px 30px 10px 30px;
+    position: relative;
+}
+@media (max-width: 767px) {
+    .row.faq .tab-content {
+        margin-top: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+}
+body.rtl .row.faq .nav li a .fa {float: right; margin-right: 0; margin-left: 15px;}
+@media (max-width: 767px) {
+    .row.faq > .pull-left,
+    .row.faq > .pull-right {float: none !important;}
+}
+@media (min-width: 768px) {
+    body.rtl .row.faq .nav li.active:before {content: ''; position: absolute; top: 15px; right: auto; left: -31px; width: 0; height: 0; border-top: 10px solid transparent; border-right: none; border-left: 10px solid #435469; border-bottom: 10px solid transparent; z-index: 1;}
+    body.rtl .row.faq .nav li.active:after {content: ''; position: absolute; top: 15px; right: auto; left: -32px; width: 0; height: 0; border-top: 10px solid transparent; border-right: none; border-left: 10px solid #fdfdfd; border-bottom: 10px solid transparent; z-index: 2;}
+    body.rtl.body-dark .row.faq .nav li.active:before {content: ''; position: absolute; top: 15px; right: auto; left: -31px; width: 0; height: 0; border-top: 10px solid transparent; border-right: none; border-left: 10px solid #435469; border-bottom: 10px solid transparent; z-index: 1;}
+    body.rtl.body-dark .row.faq .nav li.active:after {content: ''; position: absolute; top: 15px; right: auto; left: -32px; width: 0; height: 0; border-top: 10px solid transparent; border-right: none; border-left: 10px solid #102033; border-bottom: 10px solid transparent; z-index: 2;}
+}
+@media (max-width: 767px) {
+    body.rtl .row.faq > .pull-left,
+    body.rtl .row.faq > .pull-right {float: none !important;}
+}
+.page-section {
+  padding-bottom: 70px;
+  padding-top: 70px;
+  position: relative;
+  background-color: #214760;
+}
+.section-title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0 40px 0;
+    z-index: 0;
+    text-transform: uppercase;
+    color: #fff;
+    display: table;
+    width: 100%;
+}
+.section-title small {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: none;
+    color: #fff;
+}
+.section-title .icon-inner {
+    display: table-cell;
+    width: 70px;
+}
+.section-title .title-inner {
+    display: table-cell;
+    padding-bottom: 2px;
+    vertical-align: middle;
+}
+
+.image .section-title,
+.image .section-title small,
+.dark .section-title,
+.dark .section-title small,
+.color .section-title,
+.color .section-title small {
+    color: #ffffff;
+}
+.color .section-title:after {
+    color: #141f23;
+}
+
+.section-title .fa-stack {
+    width: 50px;
+    height: 57px;
+    line-height: 57px;
+    margin-right: 20px;
+}
+.section-title .fa-stack .fa {color: #ffffff;}
+.color .section-title .fa-stack .fa {color: #FFCD2A;}
+.section-title .rhex {background-color: #FFCD2A;}
+.color .section-title .rhex {background-color: #ffffff;}
+.color .section-title .crcle {background-color: #ffffff;}
+.color .section-title .wohex {background-color: #ffffff;}
+
+
+.row.faq .tab-content:before {
+    border-right-color: #435469;
+}
+
+.row.faq .tab-content:after {
+    border-right-color: #102033;
+}
+
+.row.faq .nav li a {
+    border-color: #435469;
+    background-color: #1c2b3d;
+    color: #eff6ff;
+}
+
+.row.faq .tab-content .fa {
+    font-size: 18px;
+}
+.row.faq .nav {}
+.row.faq .nav li + li {
+    margin-top: 20px;
+}
+.row.faq .nav li a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: solid 1px #435469;
+    background-color: #fdfdfd;
+    color: #374146;
+}
+.row.faq .nav li.active a,
+.row.faq .nav li a:hover {
+    background-color: #FFCD2A;
+    border-color: #214760;
+    font-weight: bold;
+}
+.row.faq .nav li a .fa {
+    width: 20px;
+    text-align: center;
+    margin-right: 15px;
+    margin-top: 3px;
+    float: left;
+}
+.row.faq .nav li a .faq-inner {
+    display: block;
+    overflow: hidden;
+}
+ .section-title .fa-stack .fa {
+    color: #ffffff;
+}
+
+ .color .section-title .fa-stack .fa {
+    color: #ffffff;
+}
+
+ .section-title .rhex {
+    background-color: #FFCD2A;
+}
+ .color .section-title .rhex {
+    background-color: #FFCD2A;
+}
+.section-title .fa-stack .fa {
+    color: #ffffff;
+}
+.section-title .fa-stack {
+    width: 50px;
+    height: 57px;
+    line-height: 57px;
+    margin-right: 20px;
+}
+.visible .fa {
+    visibility: visible;
+}
+
+.rhex {
+    background-color: #FFCD2A;
+    margin-top: 14px;
+    width: 50px;
+    height: 28px;
+    border-radius: 2px;
+}
+.rhex:before,
+.rhex:after {
+    position: absolute;
+    top: 0; left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+    content: '';
+}
+.rhex:before {
+    -webkit-transform: rotate(60deg);
+    -moz-transform:    rotate(60deg);
+    -ms-transform:     rotate(60deg);
+    -o-transform:      rotate(60deg);
+    transform:         rotate(60deg);
+}
+.rhex:after {
+    -webkit-transform: rotate(-60deg);
+    -moz-transform:    rotate(-60deg);
+    -ms-transform:     rotate(-60deg);
+    -o-transform:      rotate(-60deg);
+    transform:         rotate(-60deg);
+}
 
 .housing {
   background: #bcc7cf;
