@@ -2674,12 +2674,11 @@ h1.logo {
   margin-right: -30px; }
 .row.faq {}
 .row.faq .tab-content {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
-    border: solid 1px #435469;
-    border-radius: 2px;
+    border-radius: 12px;
     background-color: #fdfdfd;
-    padding: 30px 30px 10px 30px;
+    padding: 30px ;
     position: relative;
 }
 @media (max-width: 767px) {
@@ -2771,7 +2770,9 @@ body.rtl .row.faq .nav li a .fa {float: right; margin-right: 0; margin-left: 15p
 .row.faq .tab-content:after {
     border-right-color: #102033;
 }
-
+.faq ul{
+  font-size: 16px;
+}
 .row.faq .nav li a {
     border-color: #435469;
     background-color: #1c2b3d;
