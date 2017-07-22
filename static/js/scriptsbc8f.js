@@ -94,7 +94,9 @@ function loadGoogleMaps() {
   var script = document.createElement('script');
   script.type = 'text/javascript';
   script.async = 1;
-  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&amp;callback=initialize_map';
+  script.src = 'https://maps.googleapis.com/maps/api/js?callback=initialize_map';
+  // script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initialize_map';
+  
   document.body.appendChild(script);
 }
 
