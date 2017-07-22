@@ -433,7 +433,7 @@ code {
   color: #d3a91e;
   font-size: 14px; }
 
-ul.block-list, .speaker-list, .talk-list li, .talk-list li .subject {
+ul.block-list, .speaker-list, .talk-list li, .talk-list li .subject, .details li {
   display: block;
   margin: 0;
   padding: 0;
@@ -1209,7 +1209,7 @@ h1.logo {
       .talk-list li .checkin-icon:after,
       .talk-list li .party-icon:after {
         content: "";
-        width: 126px;
+        width: 175px;
         height: 25px;
         background: #ffca00;
         position: absolute;
@@ -1242,7 +1242,7 @@ h1.logo {
       position: absolute;
       bottom: -2px;
       border: 2px solid #0e374e;
-      color: #0e374e;
+      color: #ffca00;
       text-align: center;
       line-height: 30px;
       font-size: 1.5em;
@@ -1327,7 +1327,8 @@ h1.logo {
         cursor: pointer;
         background: #214760; }
         .talk-list li .subject .description h5 {
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          font-size: 19px; }
       .talk-list li .subject .avatar {
         border: 2px solid #0e374e;
         position: absolute;
@@ -1411,6 +1412,9 @@ h1.logo {
       transform: translateX(128px); }
     .talk-list li.odd.open .time {
       padding-left: 0; }
+      .talk-list .details li{
+        list-style-type: none;
+      }
 
 .event-starts-0800 {
   left: 0%; }
