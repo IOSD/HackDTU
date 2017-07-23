@@ -3227,14 +3227,12 @@ body.rtl .row.faq .nav li a .fa {float: right; margin-right: 0; margin-left: 15p
   overflow: auto; }
 
 .modal {
-  margin: 0px auto 0px auto;
+  margin: 10% auto;
   background: white;
   padding: 40px;
-  max-width: 390px;
-  max-height: 100%;
-  overflow-y: auto;
-  z-index: 9000;
-  position: relative; }
+  
+   z-index: 9999;
+  position: absolute; }
   .modal .modal-close {
     position: absolute;
     top: 20px;

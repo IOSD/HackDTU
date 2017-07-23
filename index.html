@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8"/>
   <title>HackDTU</title>
-  <meta name="description" content="JSConf Argentina will be a full day event on November 29th, with programmers and designers from all over the world" />
+  <meta name="description" content="HackDTU 2.0" />
   <meta name="keywords" content="jsconf, javascript, conference, development, buenos aires, argentina, programming" />
   <meta name="robots" content="INDEX, FOLLOW" />
   <meta name="author" content="Aerolab" />
@@ -35,6 +35,8 @@
   <link rel="stylesheet" href="static/styles/stylescb5b.css?201411290200" />
   <link rel="stylesheet" type="text/css" href="static/styles/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="extra.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#FFC20D" />
 
@@ -163,17 +165,19 @@ recheckStreamingTime();
 
         <!--<h1 class="sprite logo wow animated fadeInDown"><span class="screenreader">HackDTU</span></h1>
 			-->
-
+		
 		<img src="static/images/logo.png" class="img-responsive hack-logo fadeInUp">
-
+		
 		<address class="wow animated fadeInUp" data-wow-delay="1s">
           <time datetime="2014-11-29T09:00-03:00">
-            <span class="icon icon-date"></span>
-            November 29
+	<i class="fa fa-calendar-check-o"  style="font-size:32px;" aria-hidden="true"></i>            
+	<!--<span class="icon icon-date"></span>-->
+           This Fall
           </time>
           <span class="adr">
             <a href="https://www.google.co.in/maps/place/Delhi+Technological+University/@28.7493976,77.112966,16z/data=!4m5!3m4!1s0x0:0x87d470ca1c30d1b0!8m2!3d28.7500749!4d77.1176652">
-			<span class="icon icon-place"></span>
+		<!--	<span class="icon icon-place"></span>-->
+		<i class="fa fa-map-marker" aria-hidden="true" style="font-size:36px;" ></i>
             <span class="street-address">Delhi Technological University</span>
 			</a>
 		  </span>
@@ -189,8 +193,23 @@ recheckStreamingTime();
 -->
       <!--<button class="wow animated fadeInUp" data-wow-delay="1s" id="signup">REGISTER</button> 
       -->
-      <button class="wow animated fadeInUp" data-wow-delay="1s" id="aftermovie">WATCH AFTERMOVIE OF HackDTU 1.0</button>
 
+	
+      <button class="wow animated fadeInUp" data-wow-delay="1s" id="aftermovie">WATCH AFTERMOVIE OF HackDTU 1.0</button>
+     	 <button class="wow animated fadeInUp" data-wow-delay="1s" id="aftermovie" data-toggle="modal" data-target="#myModal">REGISTER</button>
+     	 <div id="myModal" class = "modal fade" role="dialog" data-backdrop="false">
+     	 	<div class="modal-dialog">
+     	 		<div class = "model-content">
+     	 			
+     	 			<div class="modal-body">
+     	 			<h2>Registration Opens On September 1</h2>
+     	 			</div>
+     	 			<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+     	 		</div>
+     	 	</div>
+     	 </div>
 
         <div class="main-menu">
 
@@ -560,7 +579,7 @@ recheckStreamingTime();
               <h6>Location: BR Auditorium</h6>
               <span class="more">+</span>
               <div class="details">
-                <p>Selected teams will be registered on arrival at the venue. Please bring a printout of the selection e-mail. Reaching the venue in advance will ensure a speedy process as the registration desk will close at 8:00 PM. Payment for food and accommodation (optional) can be done upon registration. </p>
+                <p>Selected teams will have to register at the venue.Please reach on time as  registration desk will close at 8:00 PM.</p>
                 <div class="actions">
                   <a href="#" class="button md-close"></a>
                 </div>
@@ -577,7 +596,7 @@ recheckStreamingTime();
               <h5>Briefing</h5>
               <span class="more">+</span>
               <div class="details">
-                <p>The theme of the hackathon will be announced at this time. Participants will be informed of the code of conduct and necessary rules to be followed during the hackathon. You can also read the rules for HackDTU 2.0 <a href="#rules">here</a> The teams will be allotted venues and dispersed to their respective locations.</p>
+                <p>The theme of the hackathon will be announced. Participants will be informed of the code of conduct and necessary rules to be followed during the hackathon. You can also read the rules for HackDTU 2.0 <a href="#rules">here</a> The teams will be allotted venues and dispersed to their respective locations.</p>
                 <div class="actions">
                   <a href="#" class="button md-close"></a>
                 </div>
@@ -586,7 +605,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp" id="sebastian-markbage">
+        <li class="wow fadeInUp" id="sebastian-markbage">
           <h5 class="time">8:30 pm</h5>
           <div class="subject">
             <div class="description">
@@ -627,13 +646,13 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp" id="evangelina-ferreira">
+        <li class=" wow fadeInUp" id="evangelina-ferreira">
           <h5 class="time">3:00 am</h5>
           <div class="subject">
             <div class="description">
               <img src="static/images/speakers/result.png" height="96" class="avatar" alt="">
               <h5>Results of the first evaluation will be announced</h5>
-              <span class="more">+</span>
+              
               <div class="details">
 
                 <div class="actions">
@@ -679,7 +698,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp odd" id="sara-chipps">
+        <li class="wow fadeInUp odd" id="sara-chipps">
           <h5 class="time">8:00 am</h5>
           <div class="subject">
             <div class="description">
@@ -717,7 +736,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp odd" id="nikolai-bachiyski">
+        <li class="wow fadeInUp odd" id="nikolai-bachiyski">
           <h5 class="time">12:00 pm</h5>
           <div class="subject">
             <div class="description">
@@ -727,7 +746,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp" id="alex-sexton">
+        <li class="wow fadeInUp" id="alex-sexton">
           <h5 class="time">1:00 pm</h5>
           <div class="subject">
             <div class="description">
@@ -747,7 +766,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp odd" id="nathan-rajlich">
+        <li class="wow fadeInUp odd" id="nathan-rajlich">
           <h5 class="time">4:00 pm</h5>
           <div class="subject">
             <div class="description">
@@ -791,7 +810,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp" id="alvaro-videla">
+        <li class="wow fadeInUp" id="alvaro-videla">
           <h5 class="time">6:00 pm</h5>
           <div class="subject">
             <div class="description">
@@ -809,7 +828,7 @@ recheckStreamingTime();
               <h5>Prize Distribution</h5>
               <span class="more">+</span>
               <div class="details">
-                <p>The winning team with the best pitch will be announced and the top 3 teams will recieve the prize of a lifetime ;) </p>
+                <p>The winning team with the best pitch will be announced.Only the top team will get the prize. </p>
                 <div class="actions">
                   <a href="#" class="button md-close"></a>
                 </div>
@@ -891,7 +910,7 @@ recheckStreamingTime();
             </svg>
         </div>
 
-        Our Sponsors
+        Our Past Sponsors
     </h1>
 
     <div class="row" style="text-align: center;">
@@ -1067,8 +1086,11 @@ recheckStreamingTime();
 
     <div class="container">
       <small>IOSD-DTU, all rights reserved &copy; 2017</small>
-
-      <p>Follow us on <a href="https://twitter.com/iosoftwared" target="_blank">Twitter</a> or <a href="mailto:rauchg@gmail.com?Subject=Hi!" target="_blank">email us</a></p>
+	<a href="https://www.facebook.com/iosddtu/" target="blank" ><i class="fa fa-facebook"  style="font-size:48px;" aria-hidden="true"></i></a>
+	<a href="https://twitter.com/iosoftwared" target="blank" ><i class="fa fa-twitter" style="font-size:48px;" aria-hidden="true"></i></a>
+	<a href="https://github.com/IOSD" target="blank" ><i class="fa fa-github" style="font-size:48px;" aria-hidden="true"></i></a>
+	<a href="https://www.instagram.com/iosddtu/" target="blank" ><i class="fa fa-instagram" style="font-size:48px;" aria-hidden="true"></i></a>
+	<a href="https://www.linkedin.com/company/iosd?trk=ppro_cprof" target="blank" ><i class="fa fa-linkedin" style="font-size:48px;"  aria-hidden="true"></i></a>
     </div>
 
 
@@ -1089,10 +1111,10 @@ recheckStreamingTime();
 </main>
 
 
-<div id="contTerminal" class="closedTerminal terminalsizeanimated" style="overflow:visible !important">
+<!--<div id="contTerminal" class="closedTerminal terminalsizeanimated" style="overflow:visible !important">
   <div id="onlineTerminal" contenteditable spellcheck="false"></div>
   <a href="#" onclick="launchJSTerminal();return false;" class="terminalHandle"></a>
-</div>
+</div>-->
 
 <!-- <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 <script
