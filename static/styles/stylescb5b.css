@@ -696,11 +696,11 @@ h1.logo {
       font-size: 14px;
       color: #00c2d3;
       padding: 25px 10px; }
-#signup{
+#signup, #aftermovie{
   background-color: #1e3d55;
   padding: 10px;
   color: #ffc81c;
-  font-size: 20px;
+  font-size: 15px;
   border-right: 4px solid #428bca;
   border-bottom: 4px solid #428bca;
 }
@@ -3043,8 +3043,8 @@ body.rtl .row.faq .nav li a .fa {float: right; margin-right: 0; margin-left: 15p
   color: white; }
 
 .section-sponsors {
-  background:#214760;
-  color: #ffca00;
+  background:white;
+  color: #ffca00; 
   padding: 55px 0 50px; }
   .section-sponsors h1 {
     margin-bottom: 35px; }
@@ -3077,21 +3077,21 @@ body.rtl .row.faq .nav li a .fa {float: right; margin-right: 0; margin-left: 15p
     background: #d1b03f;
     overflow: hidden; }
     .sponsor-list .sponsor img {
-      width: 100%;
+      width: auto;
       height: 100% }
   .sponsor-list.sponsors-platinum .sponsor {
-    width: 289px;
+    width: auto;
     height: 160px; }
   .sponsor-list.sponsors-gold .sponsor {
-    width: 230px;
+    width: auto;
     height: 128px; }
   .sponsor-list.sponsors-silver .sponsor {
-    width: 167px;
+    width: auto;
     height: 93px; }
   .sponsor-list.sponsors-startup {
     max-width: 800px; }
     .sponsor-list.sponsors-startup .sponsor {
-      width: 167px;
+      width: auto;
       height: 93px; }
 
 .section-earlybird {
