@@ -4,3 +4,15 @@
 	width: 30%;
 	max-height:50%;
 }
+.brochure-button
+{
+	background-color:#fec900;
+	color:#1e3d55;
+	font-size:32px;
+	padding:16px;
+	margin:0 auto;
+	border:2px solid #1e3d55;
+	border-radius:4px;
+	
+}
+
