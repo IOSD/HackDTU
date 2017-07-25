@@ -5,6 +5,13 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+
+ html,body{
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+ }
 html {
   font-family: sans-serif;
   /* 1 */
@@ -2954,6 +2961,10 @@ body.rtl .row.faq .nav li a .fa {float: right; margin-right: 0; margin-left: 15p
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   perspective: 600px; }
+
+  #myModal{
+    overflow: hidden;
+  }
 
 .md-modal {
   position: fixed;
