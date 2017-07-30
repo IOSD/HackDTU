@@ -37,7 +37,6 @@
   <link rel="stylesheet" href="extra.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="static/styles/magnific-popup.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#FFC20D" />
 
@@ -126,9 +125,28 @@ recheckStreamingTime();
       <!--<button class="wow animated fadeInUp" data-wow-delay="1s" id="signup">REGISTER</button> 
       -->
 
-	   <button class="wow animated fadeInUp button1" data-wow-delay="1s" id="aftermovie-pop">WATCH AFTERMOVIE OF HackDTU 1.0</button>
-   	
-     	 <button class="wow animated fadeInUp button1" data-wow-delay="1s" id="aftermovi" data-toggle="modal" data-target="#myModal">REGISTER</button>
+	
+      <button class="wow animated fadeInUp" data-wow-delay="1s" id="aftermovie"><a href="https://goo.gl/azBBdB" style="color:#ffc515;" target="blank">WATCH AFTERMOVIE OF HackDTU 1.0</a></button>
+
+	<div id="after-movie-modal" class="aftermovie-modal modal modal-fullscreen" role="dialog" data-backdrop="false">
+		<div class="modal-dialog">
+     	 		<div class = "model-content">
+     	 			<div class="modal-header">
+				    <div class="after-movie-title" style="float:left;">Official Aftermovie of Synergy1.0</div>
+					<button type="button" data-dismiss="modal" aria-hidden="true">×</button>
+				</div>
+     	 			<div class="modal-body">
+     	 			<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2Fvideos%2F10153231379946729%2F&width=500&show_text=false&height=280&appId" width="500" height="280" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+     	 			</div>
+     	 			<!--<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>-->
+     	 		</div>
+     	 	</div>
+     	 </div>
+
+		
+     	 <button class="wow animated fadeInUp" data-wow-delay="1s" id="aftermovie" data-toggle="modal" data-target="#myModal">REGISTER</button>
      	 <div id="myModal" class = "modal fade" role="dialog" data-backdrop="false">
      	 	<div class="modal-dialog">
      	 		<div class = "model-content">
@@ -1043,9 +1061,6 @@ recheckStreamingTime();
 <script src="static/js/scriptsbc8f.js?f=201411290200"></script>
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/terminal.js"></script>
-<script src="static/js/jquery.magnific-popup.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
 
 
 <script>
@@ -1145,4 +1160,5 @@ return;
 
 </body>
 
+<!-- Mirrored from www.jsconfar.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jul 2017 10:14:42 GMT -->
 </html>
