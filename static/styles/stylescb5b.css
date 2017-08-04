@@ -10132,36 +10132,3 @@ main {
   z-index: 99999;
   opacity: 0.5;
   display: none; }
-
-#after-movie-modal{
-  height: 45vh;
-  margin-top: 10px;
-  overflow: hidden;
-  padding: 0 !important;
-}
-.modal{
-  border-right: 20px solid #1e3d55;
-  border-left: 20px solid #1e3d55;
-}
-iframe{
-  width: 48vh;
-  height: 27vh;
-}
-
-@media only screen and (max-width: 550px){
-  iframe{
-    width: 60vw;
-    height: 34vw;
-  }
-  .modal{
-    border: none;
-  }
-  #myModal{
-    width: 90vw;
-  }
-  #after-movie-modal{
-    border: none;
-    top: 10vh;
-    height: 50vh;
-  }
-}
