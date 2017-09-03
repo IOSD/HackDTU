@@ -94,7 +94,8 @@ function loadGoogleMaps() {
   var script = document.createElement('script');
   script.type = 'text/javascript';
   script.async = 1;
-  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&amp;callback=initialize_map';
+ // script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&amp;callback=initialize_map';
+   script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ_tp3RHkF_D4MejT9W_nJtbJePh_8nGs&callback=initialize_map';
   document.body.appendChild(script);
 }
 
@@ -415,4 +416,13 @@ $(document).ready(function(){
     $("#video").attr("src", streamUrl);
     return false;
   });
+});
+$(document).ready(function() {
+
+$("#aftermovie-pop").magnificPopup({
+        items: {
+            src: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fiosddtu%2Fvideos%2F2370531866504599%2F&show_text=0'
+        },
+        type: 'iframe'   
+    });
 });

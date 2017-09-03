@@ -1,6 +1,43 @@
 .hack-logo
 {
 	margin : auto;
-	width: 50%;
+	width: 30%;
 	max-height:50%;
+}
+.brochure-button
+{
+	background-color:#fec900;
+	color:#1e3d55;
+	font-size:15px;
+	padding:8px;
+	margin:0 auto;
+	border:2px solid #1e3d55;
+	border-radius:2px;
+	margin:2px;
+	
+}
+
+.aftermovie-modal
+{
+   background: white;
+   padding: 20px;
+   z-index: 9999;
+   position: absolute; 	
+   margin:10%;
+}
+
+.close1
+{
+	margin-right: 0px;
+	max-width:5px;
+}
+
+.button1
+{
+	background-color: #1e3d55;
+  padding: 10px;
+  color: #ffc81c;
+  font-size: 15px;
+  border-right: 4px solid #428bca;
+  border-bottom: 4px solid #428bca;
 }

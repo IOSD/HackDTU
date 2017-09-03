@@ -3,259 +3,118 @@
 
 <head>
   <meta charset="utf-8"/>
-  <title>JSConf Buenos Aires - Conferences for the Javascript Community</title>
-  <meta name="description" content="JSConf Argentina will be a full day event on November 29th, with programmers and designers from all over the world" />
+  <title>HackDTU</title>
+  <meta name="description" content="HackDTU 2.0" />
   <meta name="keywords" content="jsconf, javascript, conference, development, buenos aires, argentina, programming" />
   <meta name="robots" content="INDEX, FOLLOW" />
   <meta name="author" content="Aerolab" />
-  <meta name="geo.region" content="AR" />
+  <meta name="geo.region" content="IN" />
 
   <link rel="canonical" href="index.html" />
 
   <!-- Facebook Stuff -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="JSConf Argentina" />
-  <meta property="og:title" content="JSConf Buenos Aires 2014" />
-  <meta property="og:description" content="JSConf Argentina will be a full day event on November 29th, with programmers and designers from all over the world" />
-  <meta property="og:image" content="static/images/social/jsconfar-facebook.png" />
-  <meta property="og:url" content="index.html" />
+  <meta property="og:site_name" content="HackDTU" />
+  <meta property="og:title" content="HackDTU 2.0" />
+  <meta property="og:description" content="India's largest student run hackathon. 
+	Hundreds of designers and developers will code,
+    	develop and deploy innovative products and
+    	top professionals from industry will weave the way to success of budding developers." />
+  <meta property="og:image" itemprop="image" content="static/images/logo.png" />
+  <meta property="og:url" content="hackdtu.tech" />
   <meta property="fb:app_id" content="851866321490729" />
 
   <!-- Twitter Stuff -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:site" content="@jsconfar" />
-  <meta property="twitter:title" content="JSConf Buenos Aires 2014" />
-  <meta property="twitter:description" content="JSConf Argentina will be a full day event on November 29th, with programmers and designers from all over the world" />
-  <meta property="twitter:image" content="static/images/social/jsconfar-twitter.png" />
-  <meta property="twitter:url" content="index.html" />
+  <meta property="twitter:site" content="@iosddtu" />
+  <meta property="twitter:title" content="HackDTU 2.0" />
+  <meta property="twitter:description" content="India's largest student run hackathon
+ Hundreds of designers and developers will code,
+    develop and deploy innovative products and
+    top professionals from industry will weave the way to success of budding developers." />
+  <meta property="twitter:image" content="static/images/logo.png" />
+  <meta property="twitter:url" content="hackdtu.tech" />
 
-  <link rel="icon" href="static/styles/images/favicon.png" type="image/png" />
-  <link rel="shortcut icon" href="static/styles/images/favicon.png" type="image/png" />
+  <link rel="icon" href="static/images/hacklogo.png"  />
 
   <link rel="stylesheet" type="text/css" href="static/styles/bootstrap.min.css">
   <link rel="stylesheet" href="static/styles/stylescb5b.css?201411290200" />
   <link rel="stylesheet" type="text/css" href="static/styles/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="extra.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/styles/magnific-popup.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#FFC20D" />
 
-  <!--[if lte IE 9]>
-  <link rel="stylesheet" href="static/styles/styles-ie.css"/>
-  <![endif]-->
+ 
 
   <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
   <meta name="apple-mobile-web-app-capable" content="no" />
 
-  <!-- <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-30114730-1', 'jsconfar.com');
-    ga('require', 'displayfeatures');
-    ga('require', 'linkid', 'linkid.html');
-    ga('require', 'ecommerce');
-    ga('send', 'pageview');
-  </script>
- -->
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10"/>
 </head>
 <body>
-
-
-<script>
-// Inject some CSS if the conference is active
-var streamActive = false;
-var streamingStart = Date.UTC(2014, 10, 29, 11, 00);
-var streamingEnd = Date.UTC(2014, 10, 29, 23, 59);
-
-function recheckStreamingTime() {
-  var nowTime = new Date();
-  streamActive = nowTime >= streamingStart && nowTime <= streamingEnd;
-
-  if( streamActive ) {
-    document.getElementsByTagName('body')[0].className = 'streaming';
-  } else {
-    document.getElementsByTagName('body')[0].className = 'no-streaming';
-  }
-}
-
-recheckStreamingTime();
-</script>
 
 <main>
 
   <header class="section-header">
 
     <div class="intro-holder">
-
-      <div id="game-holder">
-        <!--
-        <img src="static/game_assets/dance/2.gif" height="200" style="left: 20px;" />
-        <img src="static/game_assets/dance/3.gif" height="200" style="left: 500px;" />
-        -->
-        <img class="dancer" src="static/game_assets/dance/4.gif" height="200" style="right: 20px; display:none;" />
-
-        <div id="invaders-game"></div>
-
-        <div id="game-score">
-          <div id="game-score-text">0</div>
-          <p>score</p>
-          <div class="game-friends-title">It's Multiplayer!</div>
-          <div class="game-friends-text">Tell your friends!</div>
-        </div>
-
-        <div id="game-progress">
-          <div id="game-progress-bar">Next Level</div>
-        </div>
-
-        <div id="game-instructions">
-          Move with the Arrow Keys or WASD
-          <br/>
-          Shoot with Space
-          <br/>
-          Have Fun!
-        </div>
-
-        <div id="game-friends">
-
-        </div>
-
-        <div id="game-over">
-          <div class="game-ui-container">
-
-            <div class="game-over">
-              <div class="game-over-title">Game Over</div>
-              <div class="game-over-text">
-                <div id="game-over-text">Game Over</div>
-                <div class="game-over-share">
-                  <a class="share-twitter" href="https://twitter.com/" target="_blank">&lt;tw&gt;</a>
-                  <a class="share-facebook" href="https://www.facebook.com/" target="_blank">&lt;fb&gt;</a>
-                </div>
-              </div>
-              <div class="game-over-continue">Press Space to Restart</div>
-            </div>
-
-          </div>
-        </div>
-
-        <div id="game-overlay">
-          <div class="game-ui-container">
-
-            <div class="game-signup" id="game-signup">
-              <figure>
-                <img src="static/game_assets/ui/cartridge.png" width="399" height="380" alt="Attack of the Drones" />
-                <div class="game-title">Fight for Javascript and Stuff</div>
-                <div class="game-detail">Built with Phaser.JS + Socket.io</div>
-              </figure>
-              <form action="#" onsubmit="return tryToStartGame();" disabled>
-                <input type="text" name="name" value="" placeholder="Your Superhero name" maxlength="24" required />
-                <button type="submit">Play Now!</button>
-              </form>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
+     
+        
       <div id="header-content" class="container" itemscope="itemscope" itemtype="http://schema.org/Event">
 
-        <!--<h1 class="sprite logo wow animated fadeInDown"><span class="screenreader">HackDTU</span></h1>
-			-->
-
+      
+		
 		<img src="static/images/logo.png" class="img-responsive hack-logo fadeInUp">
-
-		<address class="wow animated fadeInUp" data-wow-delay="1s">
+		
+		<address class="wow animated fadeInUp" >
           <time datetime="2014-11-29T09:00-03:00">
-            <span class="icon icon-date"></span>
-            November 29
+	<i class="fa fa-calendar-check-o"  style="font-size:32px;" aria-hidden="true"></i>            
+	<!--<span class="icon icon-date"></span>-->
+           13-14 October 2017
           </time>
           <span class="adr">
             <a href="https://www.google.co.in/maps/place/Delhi+Technological+University/@28.7493976,77.112966,16z/data=!4m5!3m4!1s0x0:0x87d470ca1c30d1b0!8m2!3d28.7500749!4d77.1176652">
-			<span class="icon icon-place"></span>
+		<!--	<span class="icon icon-place"></span>-->
+		<i class="fa fa-map-marker" aria-hidden="true" style="font-size:36px;" ></i>
             <span class="street-address">Delhi Technological University</span>
 			</a>
 		  </span>
         </address>
 
-        <meta itemprop="url" content="index.html"/>
+        <meta itemprop="url" content="hackdtu.tech"/>
         <meta itemprop="startDate" content="2014-11-29"/>
-        <meta itemprop="image" content="static/images/jsconf_argentina_logo.html"/>
-
-      <!--  <div class="hello wow animated fadeInUp" data-wow-delay="1.5s">Hello Bs As!</div>
-
-        <code>&lt;script src=&quot;JSConf2014.js&quot;&gt;&lt;/script&gt;</code>
--->
-
-        <form class="signup-form" action="http://formspree.io/iosddtu@gmail.com" validate method="post" target="_blank">
-          <div class="input-group">
-            <input type="email" name="EMAIL" value="" placeholder="I want to stay in touch" required />
-            <span class="submit"><button type="submit"><span class="icon icon-send-yellow"></span></button></span>
-          </div>
-       <!--   <input type="hidden" name="b_33875ea2facba4ce8d8bc0d66_8c9110b9d4" tabindex="-1" value="">-->
-          <input type="hidden" name="subscribe" value="Subscribe" />
-        </form>
-
+        
+	   <button class="wow animated fadeInUp button1"  id="aftermovie-pop">WATCH AFTERMOVIE OF HackDTU 1.0</button>
+   	
+     	 <button class="wow animated fadeInUp button1" id="aftermovie" data-toggle="modal" data-target="#myModal">REGISTER</button>
+     	 <div id="myModal" class = "modal fade" role="dialog" data-backdrop="false">
+     	 	<div class="modal-dialog">
+     	 		<div class = "model-content">
+     	 			
+     	 			<div class="modal-body">
+     	 			<h2>Registration Opens On September 10</h2>
+     	 			</div>
+     	 			<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+     	 		</div>
+     	 	</div>
+     	 </div>
 
         <div class="main-menu">
 
-<!--
-          <div class="tickets">
-            <a class="button button-primary button-game" href="#">
-              <span class="icon icon-game"></span>
-              Play Game
-            </a>
-          </div>
-
-          <div class="video">
-            <a class="button button-secondary button-watch" href="https://www.youtube.com/watch?v=I4VkZ5H9PE8" target="_blank">
-              <span class="icon icon-video"></span>
-              Watch Video
-            </a>
-          </div>
--->
 
         </div>
 
       </div>
 
       <div id="stream" class="container">
-        <div class="heading">
-          <a href="index.html" class="jsconf">JSConf Argentina 2014</a>
-          <!--<a href="#" class="closeStream">close stream</a>-->
-        </div>
-        <div class="realTime" st>
-          <iframe width="720" id="video" height="405" src="https://www.youtube.com/embed/I4VkZ5H9PE8?version=3&amp;enablejsapi=1" frameborder="0" allowfullscreen style="background:#000;"></iframe>
-          <div class="dashboard">
-            <div class="current">
-              <div class="break coffee">
-                <h3> is powered by</h3>
-                <a href="#" class="sponsor">Sponsor</a>
-              </div>
-              <div class="person">
-                <div class="social">
-                  <img src="static/images/speakers/sara-chipps.jpg" alt="" class="avatar">
-                  <div class="share">
-                    <a target="_blank" href="http://twitter.com/share?text=Watching%20the%20JSConf%20Argentina%20Live%20Stream&amp;url=https://www.jsconfar.com" class="share-btn tw">&lt;share on tw /&gt;</a>
-                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=https://www.jsconfar.com&amp;t=Watching%20the%20JSConf%20Argentina%20Live%20Stream" class="share-btn fb">&lt;share on fb /&gt;</a>
-                  </div>
-                </div>
-                <div class="info">
-                  <h2>How I learned to Code by Making 180 websites in 180 days</h2>
-                  <h3>_Sara Chipps</h3>
-                  <a href="#">@sarachipps</a>
-                </div>
-              </div>
-            </div>
-            <div class="next">
-              <h4>_up next</h4>
-              <h2>Building a Distributed Data Ingestion System with RabbitMQ</h2>
-              <h3>_Álvaro Videla</h3>
-            </div>
-          </div>
-        </div>
+        
+        
       </div>
     </div>
 
@@ -263,7 +122,7 @@ recheckStreamingTime();
       <div class="illustration">
         <!-- Planetarium animation -->
         <div class="planetarium">
-          <svg id="planeatrium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 110.8 85.2" enable-background="new 0 0 110.8 85.2" xml:space="preserve"> <polygon fill="#00C2D3" points="27.2,58.5 81.2,58.5 71.4,68.5 36.4,68.5 "/> <polygon fill="#008794" points="73.1,67.3 40,58.5 81.9,58.5 "/> <path fill="#0E374E" d="M71.8,69.5H36l-11.1-12h58.7L71.8,69.5z M36.9,67.5H71l7.8-8H29.5L36.9,67.5z"/> <path fill="#224861" d="M10.7,44.5C10.7,18.5,30.2,1,54.2,1s43.5,17.5,43.5,43.5H10.7z"/> <defs><clipPath id="light-mask"> <path d="M10.7,44.5C10.7,18.5,30.2,1,54.2,1s43.5,17.5,43.5,43.5H10.7z"></path> </clipPath></defs> <g id="lights" clip-path="url(#light-mask)"> <g id="color-lights1" style="transform: translateX(0px)"> <polygon fill="#FF0000" points="102.2,30 100.2,30 100.2,28 97.2,28 97.2,30 95.2,30 95.2,33 97.2,33 97.2,35 100.2,35 100.2,33 102.2,33 "/> <polygon fill="#FF9900" points="121.2,30 119.2,30 119.2,28 116.2,28 116.2,30 114.2,30 114.2,33 116.2,33 116.2,35 119.2,35 119.2,33 121.2,33 "/> <polygon fill="#33FF00" points="111.7,44 109.7,44 109.7,42 106.7,42 106.7,44 104.7,44 104.7,47 106.7,47 106.7,49 109.7,49 109.7,47 111.7,47 "/> <polygon fill="#FF0000" points="130.7,44 128.7,44 128.7,42 125.7,42 125.7,44 123.7,44 123.7,47 125.7,47 125.7,49 128.7,49 128.7,47 130.7,47 "/> <polygon fill="#0099FF" points="102.2,2 100.2,2 100.2,0 97.2,0 97.2,2 95.2,2 95.2,5 97.2,5 97.2,7 100.2,7 100.2,5 102.2,5 "/> <polygon fill="#FFFF00" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#6633FF" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FF9900" points="83.2,2 81.2,2 81.2,0 78.2,0 78.2,2 76.2,2 76.2,5 78.2,5 78.2,7 81.2,7 81.2,5 83.2,5 "/> <polygon fill="#FF0000" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#33FF00" points="64,30 62,30 62,28 59,28 59,30 57,30 57,33 59,33 59,35 62,35 62,33 64,33 "/> <polygon fill="#0099FF" points="83,30 81,30 81,28 78,28 78,30 76,30 76,33 78,33 78,35 81,35 81,33 83,33 "/> <polygon fill="#FF0000" points="73.5,44 71.5,44 71.5,42 68.5,42 68.5,44 66.5,44 66.5,47 68.5,47 68.5,49 71.5,49 71.5,47 73.5,47 "/> <polygon fill="#FF9900" points="92.5,44 90.5,44 90.5,42 87.5,42 87.5,44 85.5,44 85.5,47 87.5,47 87.5,49 90.5,49 90.5,47 92.5,47 "/> <polygon fill="#FFFF00" points="64,2 62,2 62,0 59,0 59,2 57,2 57,5 59,5 59,7 62,7 62,5 64,5 "/> <polygon fill="#6633FF" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#FF0000" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FF9900" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#0099FF" points="45,2 43,2 43,0 40,0 40,2 38,2 38,5 40,5 40,7 43,7 43,5 45,5 "/> <polygon fill="#FF9900" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#33FF00" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FFFF00" points="26,30 24,30 24,28 21,28 21,30 19,30 19,33 21,33 21,35 24,35 24,33 26,33 "/> <polygon fill="#FF0000" points="45,30 43,30 43,28 40,28 40,30 38,30 38,33 40,33 40,35 43,35 43,33 45,33 "/> <polygon fill="#0099FF" points="35.5,44 33.5,44 33.5,42 30.5,42 30.5,44 28.5,44 28.5,47 30.5,47 30.5,49 33.5,49 33.5,47 35.5,47 "/> <polygon fill="#6633FF" points="54.5,44 52.5,44 52.5,42 49.5,42 49.5,44 47.5,44 47.5,47 49.5,47 49.5,49 52.5,49 52.5,47 54.5,47 "/> <polygon fill="#33FF00" points="26,2 24,2 24,0 21,0 21,2 19,2 19,5 21,5 21,7 24,7 24,5 26,5 "/> <polygon fill="#0099FF" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FFFF00" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF0000" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FF0000" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF9900" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> </g> <g id="color-lights2" style="transform: translateX(114px)"> <polygon fill="#FF0000" points="102.2,30 100.2,30 100.2,28 97.2,28 97.2,30 95.2,30 95.2,33 97.2,33 97.2,35 100.2,35 100.2,33 102.2,33 "/> <polygon fill="#FF9900" points="121.2,30 119.2,30 119.2,28 116.2,28 116.2,30 114.2,30 114.2,33 116.2,33 116.2,35 119.2,35 119.2,33 121.2,33 "/> <polygon fill="#33FF00" points="111.7,44 109.7,44 109.7,42 106.7,42 106.7,44 104.7,44 104.7,47 106.7,47 106.7,49 109.7,49 109.7,47 111.7,47 "/> <polygon fill="#FF0000" points="130.7,44 128.7,44 128.7,42 125.7,42 125.7,44 123.7,44 123.7,47 125.7,47 125.7,49 128.7,49 128.7,47 130.7,47 "/> <polygon fill="#0099FF" points="102.2,2 100.2,2 100.2,0 97.2,0 97.2,2 95.2,2 95.2,5 97.2,5 97.2,7 100.2,7 100.2,5 102.2,5 "/> <polygon fill="#FFFF00" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#6633FF" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FF9900" points="83.2,2 81.2,2 81.2,0 78.2,0 78.2,2 76.2,2 76.2,5 78.2,5 78.2,7 81.2,7 81.2,5 83.2,5 "/> <polygon fill="#FF0000" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#33FF00" points="64,30 62,30 62,28 59,28 59,30 57,30 57,33 59,33 59,35 62,35 62,33 64,33 "/> <polygon fill="#0099FF" points="83,30 81,30 81,28 78,28 78,30 76,30 76,33 78,33 78,35 81,35 81,33 83,33 "/> <polygon fill="#FF0000" points="73.5,44 71.5,44 71.5,42 68.5,42 68.5,44 66.5,44 66.5,47 68.5,47 68.5,49 71.5,49 71.5,47 73.5,47 "/> <polygon fill="#FF9900" points="92.5,44 90.5,44 90.5,42 87.5,42 87.5,44 85.5,44 85.5,47 87.5,47 87.5,49 90.5,49 90.5,47 92.5,47 "/> <polygon fill="#FFFF00" points="64,2 62,2 62,0 59,0 59,2 57,2 57,5 59,5 59,7 62,7 62,5 64,5 "/> <polygon fill="#6633FF" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#FF0000" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FF9900" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#0099FF" points="45,2 43,2 43,0 40,0 40,2 38,2 38,5 40,5 40,7 43,7 43,5 45,5 "/> <polygon fill="#FF9900" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#33FF00" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FFFF00" points="26,30 24,30 24,28 21,28 21,30 19,30 19,33 21,33 21,35 24,35 24,33 26,33 "/> <polygon fill="#FF0000" points="45,30 43,30 43,28 40,28 40,30 38,30 38,33 40,33 40,35 43,35 43,33 45,33 "/> <polygon fill="#0099FF" points="35.5,44 33.5,44 33.5,42 30.5,42 30.5,44 28.5,44 28.5,47 30.5,47 30.5,49 33.5,49 33.5,47 35.5,47 "/> <polygon fill="#6633FF" points="54.5,44 52.5,44 52.5,42 49.5,42 49.5,44 47.5,44 47.5,47 49.5,47 49.5,49 52.5,49 52.5,47 54.5,47 "/> <polygon fill="#33FF00" points="26,2 24,2 24,0 21,0 21,2 19,2 19,5 21,5 21,7 24,7 24,5 26,5 "/> <polygon fill="#0099FF" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FFFF00" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF0000" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FF0000" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF9900" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> </g> <g id="color-lights3" style="transform: translateX(114px)"> <polygon fill="#FF0000" points="102.2,30 100.2,30 100.2,28 97.2,28 97.2,30 95.2,30 95.2,33 97.2,33 97.2,35 100.2,35 100.2,33 102.2,33 "/> <polygon fill="#FF9900" points="121.2,30 119.2,30 119.2,28 116.2,28 116.2,30 114.2,30 114.2,33 116.2,33 116.2,35 119.2,35 119.2,33 121.2,33 "/> <polygon fill="#33FF00" points="111.7,44 109.7,44 109.7,42 106.7,42 106.7,44 104.7,44 104.7,47 106.7,47 106.7,49 109.7,49 109.7,47 111.7,47 "/> <polygon fill="#FF0000" points="130.7,44 128.7,44 128.7,42 125.7,42 125.7,44 123.7,44 123.7,47 125.7,47 125.7,49 128.7,49 128.7,47 130.7,47 "/> <polygon fill="#0099FF" points="102.2,2 100.2,2 100.2,0 97.2,0 97.2,2 95.2,2 95.2,5 97.2,5 97.2,7 100.2,7 100.2,5 102.2,5 "/> <polygon fill="#FFFF00" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#6633FF" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FF9900" points="83.2,2 81.2,2 81.2,0 78.2,0 78.2,2 76.2,2 76.2,5 78.2,5 78.2,7 81.2,7 81.2,5 83.2,5 "/> <polygon fill="#FF0000" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#33FF00" points="64,30 62,30 62,28 59,28 59,30 57,30 57,33 59,33 59,35 62,35 62,33 64,33 "/> <polygon fill="#0099FF" points="83,30 81,30 81,28 78,28 78,30 76,30 76,33 78,33 78,35 81,35 81,33 83,33 "/> <polygon fill="#FF0000" points="73.5,44 71.5,44 71.5,42 68.5,42 68.5,44 66.5,44 66.5,47 68.5,47 68.5,49 71.5,49 71.5,47 73.5,47 "/> <polygon fill="#FF9900" points="92.5,44 90.5,44 90.5,42 87.5,42 87.5,44 85.5,44 85.5,47 87.5,47 87.5,49 90.5,49 90.5,47 92.5,47 "/> <polygon fill="#FFFF00" points="64,2 62,2 62,0 59,0 59,2 57,2 57,5 59,5 59,7 62,7 62,5 64,5 "/> <polygon fill="#6633FF" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#FF0000" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FF9900" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#0099FF" points="45,2 43,2 43,0 40,0 40,2 38,2 38,5 40,5 40,7 43,7 43,5 45,5 "/> <polygon fill="#FF9900" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#33FF00" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FFFF00" points="26,30 24,30 24,28 21,28 21,30 19,30 19,33 21,33 21,35 24,35 24,33 26,33 "/> <polygon fill="#FF0000" points="45,30 43,30 43,28 40,28 40,30 38,30 38,33 40,33 40,35 43,35 43,33 45,33 "/> <polygon fill="#0099FF" points="35.5,44 33.5,44 33.5,42 30.5,42 30.5,44 28.5,44 28.5,47 30.5,47 30.5,49 33.5,49 33.5,47 35.5,47 "/> <polygon fill="#6633FF" points="54.5,44 52.5,44 52.5,42 49.5,42 49.5,44 47.5,44 47.5,47 49.5,47 49.5,49 52.5,49 52.5,47 54.5,47 "/> <polygon fill="#33FF00" points="26,2 24,2 24,0 21,0 21,2 19,2 19,5 21,5 21,7 24,7 24,5 26,5 "/> <polygon fill="#0099FF" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FFFF00" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF0000" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FF0000" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF9900" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> </g> </g> <path fill="#0E374E" d="M98.5,45.5h-89v-1c0-12.6,4.7-24.1,13.1-32.2C30.8,4.4,42,0,54.1,0s23.2,4.4,31.4,12.3 c8.4,8.1,13,19.6,13,32.2V45.5z M11.7,43.5h85C96.2,19.4,78.5,2,54.2,2S12.2,19.4,11.7,43.5z"/> <rect x="26.5" y="68.5" fill="#224861" width="53" height="11"/> <path fill="#0E374E" d="M80.5,80.5h-55v-13h55V80.5z M27.5,78.5h51v-9h-51V78.5z"/> <g> <path fill="#224861" d="M27.8,58.5C13,58.5,1,69.7,1,84.5h7.8c0-14.8,12-26,26.8-26H27.8z"/> <path fill="#0E374E" d="M9.8,85.5H0v-1c0-15.1,12.2-27,27.8-27h7.8v2c-14.4,0-25.8,11-25.8,25V85.5z M2,83.5h5.8 c0.4-10.8,7-19.8,16.5-23.8C11.9,61.2,2.5,71.1,2,83.5z"/> </g> <g> <path fill="#224861" d="M83,58.5c14.8,0,26.8,10.2,26.8,26H102c0-15.8-12-26-26.8-26H83z"/> <path fill="#0E374E" d="M110.8,85.5H101v-1c0-14.5-10.8-25-25.8-25v-2H83c16.1,0,27.8,11.4,27.8,27V85.5z M103,83.5h5.8 c-0.4-12.7-9.3-22.1-21.8-23.7C96.4,63.7,102.6,72.5,103,83.5z"/> </g> <rect x="7.5" y="44.5" fill="#224861" width="92" height="14"/> <path fill="#0E374E" d="M100.5,59.5h-94v-16h94V59.5z M8.5,57.5h90v-12h-90V57.5z"/> <g> <g> <rect x="95" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="91" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="87" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="83" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="79" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="75" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="71" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="67" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="63" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="59" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="55" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="51" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="47" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="43" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="39" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="35" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="31" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="27" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="23" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="19" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="15" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="11" y="45.5" fill="#0E374E" width="2" height="12"/> </g> </g> </svg> <div class="rainbows"> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> </div>
+          <svg id="planeatrium" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 110.8 85.2" enable-background="new 0 0 110.8 85.2" xml:space="preserve"> <polygon fill="#00C2D3" points="27.2,58.5 81.2,58.5 71.4,68.5 36.4,68.5 "/> <polygon fill="#008794" points="73.1,67.3 40,58.5 81.9,58.5 "/> <path fill="#0E374E" d="M71.8,69.5H36l-11.1-12h58.7L71.8,69.5z M36.9,67.5H71l7.8-8H29.5L36.9,67.5z"/> <path fill="#224861" d="M10.7,44.5C10.7,18.5,30.2,1,54.2,1s43.5,17.5,43.5,43.5H10.7z"/> <defs><clipPath id="light-mask"> <path d="M10.7,44.5C10.7,18.5,30.2,1,54.2,1s43.5,17.5,43.5,43.5H10.7z"></path> </clipPath></defs> <g id="lights" clip-path="url(#light-mask)"> <g id="color-lights1" style="transform: translateX(0px)"> <polygon fill="#FF0000" points="102.2,30 100.2,30 100.2,28 97.2,28 97.2,30 95.2,30 95.2,33 97.2,33 97.2,35 100.2,35 100.2,33 102.2,33 "/> <polygon fill="#FF9900" points="121.2,30 119.2,30 119.2,28 116.2,28 116.2,30 114.2,30 114.2,33 116.2,33 116.2,35 119.2,35 119.2,33 121.2,33 "/> <polygon fill="#33FF00" points="111.7,44 109.7,44 109.7,42 106.7,42 106.7,44 104.7,44 104.7,47 106.7,47 106.7,49 109.7,49 109.7,47 111.7,47 "/> <polygon fill="#FF0000" points="130.7,44 128.7,44 128.7,42 125.7,42 125.7,44 123.7,44 123.7,47 125.7,47 125.7,49 128.7,49 128.7,47 130.7,47 "/> <polygon fill="#0099FF" points="102.2,2 100.2,2 100.2,0 97.2,0 97.2,2 95.2,2 95.2,5 97.2,5 97.2,7 100.2,7 100.2,5 102.2,5 "/> <polygon fill="#FFFF00" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#6633FF" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FF9900" points="83.2,2 81.2,2 81.2,0 78.2,0 78.2,2 76.2,2 76.2,5 78.2,5 78.2,7 81.2,7 81.2,5 83.2,5 "/> <polygon fill="#FF0000" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.Link7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#33FF00" points="64,30 62,30 62,28 59,28 59,30 57,30 57,33 59,33 59,35 62,35 62,33 64,33 "/> <polygon fill="#0099FF" points="83,30 81,30 81,28 78,28 78,30 76,30 76,33 78,33 78,35 81,35 81,33 83,33 "/> <polygon fill="#FF0000" points="73.5,44 71.5,44 71.5,42 68.5,42 68.5,44 66.5,44 66.5,47 68.5,47 68.5,49 71.5,49 71.5,47 73.5,47 "/> <polygon fill="#FF9900" points="92.5,44 90.5,44 90.5,42 87.5,42 87.5,44 85.5,44 85.5,47 87.5,47 87.5,49 90.5,49 90.5,47 92.5,47 "/> <polygon fill="#FFFF00" points="64,2 62,2 62,0 59,0 59,2 57,2 57,5 59,5 59,7 62,7 62,5 64,5 "/> <polygon fill="#6633FF" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#FF0000" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FF9900" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#0099FF" points="45,2 43,2 43,0 40,0 40,2 38,2 38,5 40,5 40,7 43,7 43,5 45,5 "/> <polygon fill="#FF9900" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#33FF00" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FFFF00" points="26,30 24,30 24,28 21,28 21,30 19,30 19,33 21,33 21,35 24,35 24,33 26,33 "/> <polygon fill="#FF0000" points="45,30 43,30 43,28 40,28 40,30 38,30 38,33 40,33 40,35 43,35 43,33 45,33 "/> <polygon fill="#0099FF" points="35.5,44 33.5,44 33.5,42 30.5,42 30.5,44 28.5,44 28.5,47 30.5,47 30.5,49 33.5,49 33.5,47 35.5,47 "/> <polygon fill="#6633FF" points="54.5,44 52.5,44 52.5,42 49.5,42 49.5,44 47.5,44 47.5,47 49.5,47 49.5,49 52.5,49 52.5,47 54.5,47 "/> <polygon fill="#33FF00" points="26,2 24,2 24,0 21,0 21,2 19,2 19,5 21,5 21,7 24,7 24,5 26,5 "/> <polygon fill="#0099FF" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FFFF00" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF0000" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FF0000" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF9900" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> </g> <g id="color-lights2" style="transform: translateX(114px)"> <polygon fill="#FF0000" points="102.2,30 100.2,30 100.2,28 97.2,28 97.2,30 95.2,30 95.2,33 97.2,33 97.2,35 100.2,35 100.2,33 102.2,33 "/> <polygon fill="#FF9900" points="121.2,30 119.2,30 119.2,28 116.2,28 116.2,30 114.2,30 114.2,33 116.2,33 116.2,35 119.2,35 119.2,33 121.2,33 "/> <polygon fill="#33FF00" points="111.7,44 109.7,44 109.7,42 106.7,42 106.7,44 104.7,44 104.7,47 106.7,47 106.7,49 109.7,49 109.7,47 111.7,47 "/> <polygon fill="#FF0000" points="130.7,44 128.7,44 128.7,42 125.7,42 125.7,44 123.7,44 123.7,47 125.7,47 125.7,49 128.7,49 128.7,47 130.7,47 "/> <polygon fill="#0099FF" points="102.2,2 100.2,2 100.2,0 97.2,0 97.2,2 95.2,2 95.2,5 97.2,5 97.2,7 100.2,7 100.2,5 102.2,5 "/> <polygon fill="#FFFF00" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#6633FF" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FF9900" points="83.2,2 81.2,2 81.2,0 78.2,0 78.2,2 76.2,2 76.2,5 78.2,5 78.2,7 81.2,7 81.2,5 83.2,5 "/> <polygon fill="#FF0000" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#33FF00" points="64,30 62,30 62,28 59,28 59,30 57,30 57,33 59,33 59,35 62,35 62,33 64,33 "/> <polygon fill="#0099FF" points="83,30 81,30 81,28 78,28 78,30 76,30 76,33 78,33 78,35 81,35 81,33 83,33 "/> <polygon fill="#FF0000" points="73.5,44 71.5,44 71.5,42 68.5,42 68.5,44 66.5,44 66.5,47 68.5,47 68.5,49 71.5,49 71.5,47 73.5,47 "/> <polygon fill="#FF9900" points="92.5,44 90.5,44 90.5,42 87.5,42 87.5,44 85.5,44 85.5,47 87.5,47 87.5,49 90.5,49 90.5,47 92.5,47 "/> <polygon fill="#FFFF00" points="64,2 62,2 62,0 59,0 59,2 57,2 57,5 59,5 59,7 62,7 62,5 64,5 "/> <polygon fill="#6633FF" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#FF0000" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FF9900" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#0099FF" points="45,2 43,2 43,0 40,0 40,2 38,2 38,5 40,5 40,7 43,7 43,5 45,5 "/> <polygon fill="#FF9900" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#33FF00" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FFFF00" points="26,30 24,30 24,28 21,28 21,30 19,30 19,33 21,33 21,35 24,35 24,33 26,33 "/> <polygon fill="#FF0000" points="45,30 43,30 43,28 40,28 40,30 38,30 38,33 40,33 40,35 43,35 43,33 45,33 "/> <polygon fill="#0099FF" points="35.5,44 33.5,44 33.5,42 30.5,42 30.5,44 28.5,44 28.5,47 30.5,47 30.5,49 33.5,49 33.5,47 35.5,47 "/> <polygon fill="#6633FF" points="54.5,44 52.5,44 52.5,42 49.5,42 49.5,44 47.5,44 47.5,47 49.5,47 49.5,49 52.5,49 52.5,47 54.5,47 "/> <polygon fill="#33FF00" points="26,2 24,2 24,0 21,0 21,2 19,2 19,5 21,5 21,7 24,7 24,5 26,5 "/> <polygon fill="#0099FF" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FFFF00" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF0000" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FF0000" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF9900" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> </g> <g id="color-lights3" style="transform: translateX(114px)"> <polygon fill="#FF0000" points="102.2,30 100.2,30 100.2,28 97.2,28 97.2,30 95.2,30 95.2,33 97.2,33 97.2,35 100.2,35 100.2,33 102.2,33 "/> <polygon fill="#FF9900" points="121.2,30 119.2,30 119.2,28 116.2,28 116.2,30 114.2,30 114.2,33 116.2,33 116.2,35 119.2,35 119.2,33 121.2,33 "/> <polygon fill="#33FF00" points="111.7,44 109.7,44 109.7,42 106.7,42 106.7,44 104.7,44 104.7,47 106.7,47 106.7,49 109.7,49 109.7,47 111.7,47 "/> <polygon fill="#FF0000" points="130.7,44 128.7,44 128.7,42 125.7,42 125.7,44 123.7,44 123.7,47 125.7,47 125.7,49 128.7,49 128.7,47 130.7,47 "/> <polygon fill="#0099FF" points="102.2,2 100.2,2 100.2,0 97.2,0 97.2,2 95.2,2 95.2,5 97.2,5 97.2,7 100.2,7 100.2,5 102.2,5 "/> <polygon fill="#FFFF00" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#6633FF" points="111.7,16 109.7,16 109.7,14 106.7,14 106.7,16 104.7,16 104.7,19 106.7,19 106.7,21 109.7,21 109.7,19 111.7,19 "/> <polygon fill="#FF9900" points="83.2,2 81.2,2 81.2,0 78.2,0 78.2,2 76.2,2 76.2,5 78.2,5 78.2,7 81.2,7 81.2,5 83.2,5 "/> <polygon fill="#FF0000" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#FFFF00" points="92.7,16 90.7,16 90.7,14 87.7,14 87.7,16 85.7,16 85.7,19 87.7,19 87.7,21 90.7,21 90.7,19 92.7,19 "/> <polygon fill="#33FF00" points="64,30 62,30 62,28 59,28 59,30 57,30 57,33 59,33 59,35 62,35 62,33 64,33 "/> <polygon fill="#0099FF" points="83,30 81,30 81,28 78,28 78,30 76,30 76,33 78,33 78,35 81,35 81,33 83,33 "/> <polygon fill="#FF0000" points="73.5,44 71.5,44 71.5,42 68.5,42 68.5,44 66.5,44 66.5,47 68.5,47 68.5,49 71.5,49 71.5,47 73.5,47 "/> <polygon fill="#FF9900" points="92.5,44 90.5,44 90.5,42 87.5,42 87.5,44 85.5,44 85.5,47 87.5,47 87.5,49 90.5,49 90.5,47 92.5,47 "/> <polygon fill="#FFFF00" points="64,2 62,2 62,0 59,0 59,2 57,2 57,5 59,5 59,7 62,7 62,5 64,5 "/> <polygon fill="#6633FF" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#FF0000" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FF9900" points="73.5,16 71.5,16 71.5,14 68.5,14 68.5,16 66.5,16 66.5,19 68.5,19 68.5,21 71.5,21 71.5,19 73.5,19 "/> <polygon fill="#0099FF" points="45,2 43,2 43,0 40,0 40,2 38,2 38,5 40,5 40,7 43,7 43,5 45,5 "/> <polygon fill="#FF9900" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#33FF00" points="54.5,16 52.5,16 52.5,14 49.5,14 49.5,16 47.5,16 47.5,19 49.5,19 49.5,21 52.5,21 52.5,19 54.5,19 "/> <polygon fill="#FFFF00" points="26,30 24,30 24,28 21,28 21,30 19,30 19,33 21,33 21,35 24,35 24,33 26,33 "/> <polygon fill="#FF0000" points="45,30 43,30 43,28 40,28 40,30 38,30 38,33 40,33 40,35 43,35 43,33 45,33 "/> <polygon fill="#0099FF" points="35.5,44 33.5,44 33.5,42 30.5,42 30.5,44 28.5,44 28.5,47 30.5,47 30.5,49 33.5,49 33.5,47 35.5,47 "/> <polygon fill="#6633FF" points="54.5,44 52.5,44 52.5,42 49.5,42 49.5,44 47.5,44 47.5,47 49.5,47 49.5,49 52.5,49 52.5,47 54.5,47 "/> <polygon fill="#33FF00" points="26,2 24,2 24,0 21,0 21,2 19,2 19,5 21,5 21,7 24,7 24,5 26,5 "/> <polygon fill="#0099FF" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FFFF00" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF0000" points="35.5,16 33.5,16 33.5,14 30.5,14 30.5,16 28.5,16 28.5,19 30.5,19 30.5,21 33.5,21 33.5,19 35.5,19 "/> <polygon fill="#FF0000" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> <polygon fill="#FF9900" points="16.5,16 14.5,16 14.5,14 11.5,14 11.5,16 9.5,16 9.5,19 11.5,19 11.5,21 14.5,21 14.5,19 16.5,19 "/> </g> </g> <path fill="#0E374E" d="M98.5,45.5h-89v-1c0-12.6,4.7-24.1,13.1-32.2C30.8,4.4,42,0,54.1,0s23.2,4.4,31.4,12.3 c8.4,8.1,13,19.6,13,32.2V45.5z M11.7,43.5h85C96.2,19.4,78.5,2,54.2,2S12.2,19.4,11.7,43.5z"/> <rect x="26.5" y="68.5" fill="#224861" width="53" height="11"/> <path fill="#0E374E" d="M80.5,80.5h-55v-13h55V80.5z M27.5,78.5h51v-9h-51V78.5z"/> <g> <path fill="#224861" d="M27.8,58.5C13,58.5,1,69.7,1,84.5h7.8c0-14.8,12-26,26.8-26H27.8z"/> <path fill="#0E374E" d="M9.8,85.5H0v-1c0-15.1,12.2-27,27.8-27h7.8v2c-14.4,0-25.8,11-25.8,25V85.5z M2,83.5h5.8 c0.4-10.8,7-19.8,16.5-23.8C11.9,61.2,2.5,71.1,2,83.5z"/> </g> <g> <path fill="#224861" d="M83,58.5c14.8,0,26.8,10.2,26.8,26H102c0-15.8-12-26-26.8-26H83z"/> <path fill="#0E374E" d="M110.8,85.5H101v-1c0-14.5-10.8-25-25.8-25v-2H83c16.1,0,27.8,11.4,27.8,27V85.5z M103,83.5h5.8 c-0.4-12.7-9.3-22.1-21.8-23.7C96.4,63.7,102.6,72.5,103,83.5z"/> </g> <rect x="7.5" y="44.5" fill="#224861" width="92" height="14"/> <path fill="#0E374E" d="M100.5,59.5h-94v-16h94V59.5z M8.5,57.5h90v-12h-90V57.5z"/> <g> <g> <rect x="95" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="91" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="87" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="83" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="79" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="75" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="71" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="67" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="63" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="59" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="55" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="51" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="47" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="43" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="39" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="35" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="31" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="27" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="23" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="19" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="15" y="45.5" fill="#0E374E" width="2" height="12"/> </g> <g> <rect x="11" y="45.5" fill="#0E374E" width="2" height="12"/> </g> </g> </svg> <div class="rainbows"> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> </div>
           <audio id="nyancataudio" loop="loop" src="static/images/nyancat.ogg"></audio>
         </div>
 
@@ -273,11 +132,11 @@ recheckStreamingTime();
           <div class="obelisk"></div>
           <div class="wings-obelisk">
             <div class="wing-left">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 57.1 53.3" enable-background="new 0 0 57.1 53.3" xml:space="preserve"><g display="none"><g display="inline"><path fill="#F1D000" d="M2.9,67c-0.5-1-5.1-9.6-2.8-13.6c0.5-0.9,1.7-2,4.1-2c2.4,0,3.5,1.1,4,2c2.2,4-3.1,12.7-3.7,13.7l-0.9,1.4L2.9,67z"/><path fill="#08374A" d="M4.3,52.3c8.3,0-0.5,14.1-0.5,14.1S-4,52.3,4.3,52.3 M4.3,50.3c-2.9,0-4.3,1.4-5,2.5c-2.6,4.4,1.8,12.9,2.7,14.6l1.6,3l1.8-2.9c1-1.7,6.1-10.3,3.7-14.7C8.6,51.7,7.2,50.3,4.3,50.3L4.3,50.3z"/></g><g display="inline"><path fill="#E1B900" d="M4,61.5c0,0,5.7-9.1,0.3-9.1S4,61.5,4,61.5z"/></g></g><g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.7" y1="10.6" x2="39.7" y2="2"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="42.3" y1="2" x2="37.2" y2="2"/></g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="21.5" y1="17.5" x2="21.5" y2="8.9"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="24" y1="8.9" x2="19" y2="8.9"/></g><polygon fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" points="55,46 7.7,46 7.7,23.2 56.1,4.2 "/><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-1570.2878" y1="45.2918" x2="-1549.5376" y2="24.5415" gradientTransform="matrix(-1 0 0 1 -1555.5791 0)"><stop offset="0" style="stop-color:#589777"/><stop offset="0.4107" style="stop-color:#579677"/><stop offset="0.6145" style="stop-color:#549178"/><stop offset="0.7726" style="stop-color:#4E8879"/><stop offset="0.9066" style="stop-color:#457D7A"/><stop offset="1" style="stop-color:#3E717A"/></linearGradient><rect x="1" y="17.5" fill="url(#SVGID_1_)" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6.7" height="34.8"/><polygon opacity="0.2" fill="#4E440C" points="50,45.6 55,5.8 55,46 "/><polygon opacity="0.2" fill="#4E440C" points="7.7,46 7.7,23.2 13.2,45.6 "/><path fill="#08374A" d="M41.5,34.1c-0.2-1.3-1.1-2.5-3.7-3.5c-0.9-0.4-1.9-0.7-2.2-1.4c-0.1-0.4-0.1-0.6-0.1-0.9c0.2-0.8,1.1-1,1.9-0.8c0.5,0.2,0.9,0.5,1.2,1.1c1.3-0.8,1.3-0.8,2.2-1.4c-0.3-0.5-0.5-0.7-0.7-1c-0.8-0.9-1.8-1.3-3.5-1.3c-0.3,0-0.6,0.1-0.9,0.1c-0.8,0.2-1.6,0.6-2.1,1.2c-1.4,1.6-1,4.3,0.7,5.5c1.7,1.3,4.1,1.5,4.4,2.7c0.3,1.4-1.1,1.9-2.4,1.7c-1-0.2-1.5-0.7-2.1-1.6c-1.1,0.6-1.1,0.6-2.2,1.3c0.3,0.6,0.5,0.9,1,1.4c2.1,2.2,7.4,2.1,8.4-1.2C41.4,36,41.7,35.3,41.5,34.1z M30.5,25.2l-2.7,0c0,2.4,0,4.7,0,7.1c0,1.5,0.1,2.9-0.2,3.3c-0.4,0.8-1.4,0.7-1.9,0.6c-0.5-0.2-0.7-0.6-1-1.1c-0.1-0.1-0.1-0.2-0.2-0.3c-0.7,0.5-1.5,0.9-2.2,1.4c0.4,0.8,0.9,1.4,1.6,1.9c1,0.6,2.5,0.8,3.9,0.5c1-0.3,1.8-0.9,2.2-1.7c0.6-1.2,0.5-2.5,0.5-4.1C30.5,30.3,30.5,27.8,30.5,25.2z"/><line fill="none" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.3" y1="17.5" x2="4.3" y2="12.5"/></g><g display="none"><g display="inline"><path fill="#F1D000" d="M136.3,67c-0.6-1-5.9-9.7-3.7-13.7c0.5-0.9,1.6-2,4-2c2.4,0,3.6,1.1,4.1,2c2.4,4-2.2,12.6-2.8,13.6l-0.8,1.5L136.3,67z"/><path fill="#08374A" d="M136.7,52.3c8.3,0,0.5,14.1,0.5,14.1S128.4,52.3,136.7,52.3 M136.7,50.3c-2.9,0-4.2,1.4-4.9,2.5c-2.5,4.4,2.6,13,3.7,14.7l1.8,2.9l1.6-3c0.9-1.7,5.3-10.2,2.7-14.6C141,51.7,139.6,50.3,136.7,50.3L136.7,50.3z"/></g><g display="inline"><path fill="#E1B900" d="M137,61.5c0,0-5.7-9.1-0.3-9.1S137,61.5,137,61.5z"/></g></g><g display="none"><g display="inline"><g><polygon fill="#C1DDE4" points="82,-110 71,-106 71,-124 "/><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="63" y1="-111.0105" x2="63" y2="45.9895"><stop offset="0" style="stop-color:#BBD8D5"/><stop offset="1" style="stop-color:#FBFCFC"/></linearGradient><polygon fill="url(#SVGID_2_)" points="71,46 55,46 59,-111 71,-108 "/><linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="78.5" y1="-110.0105" x2="78.5" y2="45.9895"><stop offset="0" style="stop-color:#7AB8CE"/><stop offset="1" style="stop-color:#78B298"/></linearGradient><polygon fill="url(#SVGID_3_)" points="86,46 71,46 71,-107 82,-110 "/><polygon fill="#FFFFFF" points="60,-110 71,-107 71,-124 "/></g><g><rect x="74" y="36" fill="#65A58B" width="10" height="1"/><rect x="76" y="38" fill="#65A58B" width="7" height="1"/><rect x="74" y="40" fill="#65A58B" width="10" height="1"/></g></g><g display="inline"><path fill="#08374A" d="M70.6-123.6l10.8,15.2l4,154.2H55.5l4-154.2L70.6-123.6 M70.6-127l-1.6,2.2l-11.1,15.1l-0.4,0.5l0,0.6l-4,154.2l-0.1,2.2h2.1h29.8h2.1l-0.1-2.2l-4-154.2l0-0.6l-0.4-0.5l-10.8-15.1L70.6-127L70.6-127z"/></g></g><g display="none"><path display="inline" fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" d="M73.2,95.6c0,0,3.3-4.9,3-9.5c-0.2-3.1-3.5-6.4-6.7-5.2C66,82,65,86,65.5,89.3c0,0-6.1-1.9-7.2-8.8c-1.2-7,1.8-13.2,1.9-13.3c1.7-3.5-1.5-9-5.7-7c-3.8,1.8-4.2,8-2.9,11.4c0,0-6.1-4.4-3-17c3-12.6,20.9-12.3,20.9-12.3s14.9-0.9,22.1,11.6c0,0,5.1,10.7-2.1,17.5c0,0,2.6-8.8-3-8.6c-5.6,0.2-2.1,10.9-2.1,10.9S89.2,88.8,73.2,95.6z"/><path display="inline" fill="#E1B900" d="M71.2,75.6c0,0-3.4-3.1-2.8-8.5c0,0-1.4,2.7-3.7,4.3c0,0,0.3-4.5-1.5-9c-1.8-4.5-5.9-16.5,8.4-16.5c3.3,0,7,0.8,8.8,3.8c1.3,2,1.4,4.5,1.1,6.9c-0.3,2.3-1.3,4.2-2.1,6.3c-0.6,1.7-1.5,4.3-0.5,6c0,0-1.8,0-3.4-3.4C75.8,65.4,70,68.9,71.2,75.6z"/><path display="inline" fill="#F1D000" d="M71,60.8c0,0-8.3-14.1,0-14.1S71,60.8,71,60.8z"/><path display="inline" fill="#C9572B" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M76.1,140.9c0.2-2.5,2.8-5.6,3.4-8.3c0.8-3.3,0.7-6.8-0.3-10.1c-1.3-4.2-4.6-7.5-5.2-11.8c-3,5.8-5.8,13.2-2.5,19.4C73.3,133.5,75.7,137.5,76.1,140.9z"/><path display="inline" fill="#E1B900" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" d="M65.8,125.9c0,0-4.9-5.1-3.5-13.5c0,0,0.3-5.7,5.4-9.6c0,0,1.1,5.7,0,11.6C67.7,114.4,65.2,123,65.8,125.9z"/></g><g display="none"><g display="inline"><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="101.3" y1="10.6" x2="101.3" y2="2"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="98.7" y1="2" x2="103.8" y2="2"/></g><g display="inline"><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="119.5" y1="17.5" x2="119.5" y2="8.9"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="117" y1="8.9" x2="122" y2="8.9"/></g><polygon display="inline" fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" points="86,46 133.3,46 133.3,23.2 84.9,4.2 "/><linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="126.2912" y1="45.2918" x2="147.0415" y2="24.5415"><stop offset="0" style="stop-color:#589777"/><stop offset="0.4107" style="stop-color:#579677"/><stop offset="0.6145" style="stop-color:#549178"/><stop offset="0.7726" style="stop-color:#4E8879"/><stop offset="0.9066" style="stop-color:#457D7A"/><stop offset="1" style="stop-color:#3E717A"/></linearGradient><rect x="133.3" y="17.5" display="inline" fill="url(#SVGID_4_)" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6.7" height="34.8"/><polygon display="inline" opacity="0.2" fill="#4E440C" points="91,45.6 86,5.8 86,46 "/><polygon display="inline" opacity="0.2" fill="#4E440C" points="133.3,46 133.3,23.2 127.8,45.6 "/><path display="inline" fill="#08374A" d="M118.7,34.1c-0.2-1.3-1.1-2.5-3.7-3.5c-0.9-0.4-1.9-0.7-2.2-1.4c-0.1-0.4-0.1-0.6-0.1-0.9c0.2-0.8,1.1-1,1.9-0.8c0.5,0.2,0.9,0.5,1.2,1.1c1.3-0.8,1.3-0.8,2.2-1.4c-0.3-0.5-0.5-0.7-0.7-1c-0.8-0.9-1.8-1.3-3.5-1.3c-0.3,0-0.6,0.1-0.9,0.1c-0.8,0.2-1.6,0.6-2.1,1.2c-1.4,1.6-1,4.3,0.7,5.5c1.7,1.3,4.1,1.5,4.4,2.7c0.3,1.4-1.1,1.9-2.4,1.7c-1-0.2-1.5-0.7-2.1-1.6c-1.1,0.6-1.1,0.6-2.2,1.3c0.3,0.6,0.5,0.9,1,1.4c2.1,2.2,7.4,2.1,8.4-1.2C118.7,36,118.9,35.3,118.7,34.1z M107.7,25.2l-2.7,0c0,2.4,0,4.7,0,7.1c0,1.5,0.1,2.9-0.2,3.3c-0.4,0.8-1.4,0.7-1.9,0.6c-0.5-0.2-0.7-0.6-1-1.1c-0.1-0.1-0.1-0.2-0.2-0.3c-0.7,0.5-1.5,0.9-2.2,1.4c0.4,0.8,0.9,1.4,1.6,1.9c1,0.6,2.5,0.8,3.9,0.5c1-0.3,1.8-0.9,2.2-1.7c0.6-1.2,0.5-2.5,0.5-4.1C107.7,30.3,107.7,27.8,107.7,25.2z"/><line display="inline" fill="none" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="136.7" y1="17.5" x2="136.7" y2="12.5"/></g></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 57.1 53.3" enable-background="new 0 0 57.1 53.3" xml:space="preserve"><g display="none"><g display="inline"><path fill="#F1D000" d="M2.9,67c-0.5-1-5.1-9.6-2.8-13.6c0.5-0.9,1.7-2,4.1-2c2.4,0,3.5,1.1,4,2c2.2,4-3.1,12.7-3.7,13.7l-0.9,1.4L2.9,67z"/><path fill="#08374A" d="M4.3,52.3c8.3,0-0.5,14.1-0.5,14.1S-4,52.3,4.3,52.3 M4.3,50.3c-2.9,0-4.3,1.4-5,2.5c-2.6,4.4,1.8,12.9,2.7,14.6l1.6,3l1.8-2.9c1-1.7,6.1-10.3,3.7-14.7C8.6,51.7,7.2,50.3,4.3,50.3L4.3,50.3z"/></g><g display="inline"><path fill="#E1B900" d="M4,61.5c0,0,5.7-9.1,0.3-9.1S4,61.5,4,61.5z"/></g></g><g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="39.7" y1="10.6" x2="39.7" y2="2"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="42.3" y1="2" x2="37.2" y2="2"/></g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="21.5" y1="17.5" x2="21.5" y2="8.9"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="24" y1="8.9" x2="19" y2="8.9"/></g><polygon fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" points="55,46 7.7,46 7.7,23.2 56.1,4.2 "/><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-1570.2878" y1="45.2918" x2="-1549.5376" y2="24.5415" gradientTransform="matrix(-1 0 0 1 -1555.5791 0)"><stop offset="0" style="stop-color:#589777"/><stop offset="0.4107" style="stop-color:#579677"/><stop offset="0.6145" style="stop-color:#549178"/><stop offset="0.7726" style="stop-color:#4E8879"/><stop offset="0.9066" style="stop-color:#457D7A"/><stop offset="1" style="stop-color:#3E717A"/></linearGradient><rect x="1" y="17.5" fill="url(#SVGID_1_)" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6.7" height="34.8"/><polygon opacity="0.2" fill="#4E440C" points="50,45.6 55,5.8 55,46 "/><polygon opacity="0.2" fill="#4E440C" points="7.7,46 7.7,23.2 13.2,45.6 "/><line fill="none" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.3" y1="17.5" x2="4.3" y2="12.5"/></g><g display="none"><g display="inline"><path fill="#F1D000" d="M136.3,67c-0.6-1-5.9-9.7-3.7-13.7c0.5-0.9,1.6-2,4-2c2.4,0,3.6,1.1,4.1,2c2.4,4-2.2,12.6-2.8,13.6l-0.8,1.5L136.3,67z"/><path fill="#08374A" d="M136.7,52.3c8.3,0,0.5,14.1,0.5,14.1S128.4,52.3,136.7,52.3 M136.7,50.3c-2.9,0-4.2,1.4-4.9,2.5c-2.5,4.4,2.6,13,3.7,14.7l1.8,2.9l1.6-3c0.9-1.7,5.3-10.2,2.7-14.6C141,51.7,139.6,50.3,136.7,50.3L136.7,50.3z"/></g><g display="inline"><path fill="#E1B900" d="M137,61.5c0,0-5.7-9.1-0.3-9.1S137,61.5,137,61.5z"/></g></g><g display="none"><g display="inline"><g><polygon fill="#C1DDE4" points="82,-110 71,-106 71,-124 "/><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="63" y1="-111.0105" x2="63" y2="45.9895"><stop offset="0" style="stop-color:#BBD8D5"/><stop offset="1" style="stop-color:#FBFCFC"/></linearGradient><polygon fill="url(#SVGID_2_)" points="71,46 55,46 59,-111 71,-108 "/><linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="78.5" y1="-110.0105" x2="78.5" y2="45.9895"><stop offset="0" style="stop-color:#7AB8CE"/><stop offset="1" style="stop-color:#78B298"/></linearGradient><polygon fill="url(#SVGID_3_)" points="86,46 71,46 71,-107 82,-110 "/><polygon fill="#FFFFFF" points="60,-110 71,-107 71,-124 "/></g><g><rect x="74" y="36" fill="#65A58B" width="10" height="1"/><rect x="76" y="38" fill="#65A58B" width="7" height="1"/><rect x="74" y="40" fill="#65A58B" width="10" height="1"/></g></g><g display="inline"><path fill="#08374A" d="M70.6-123.6l10.8,15.2l4,154.2H55.5l4-154.2L70.6-123.6 M70.6-127l-1.6,2.2l-11.1,15.1l-0.4,0.5l0,0.6l-4,154.2l-0.1,2.2h2.1h29.8h2.1l-0.1-2.2l-4-154.2l0-0.6l-0.4-0.5l-10.8-15.1L70.6-127L70.6-127z"/></g></g><g display="none"><path display="inline" fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" d="M73.2,95.6c0,0,3.3-4.9,3-9.5c-0.2-3.1-3.5-6.4-6.7-5.2C66,82,65,86,65.5,89.3c0,0-6.1-1.9-7.2-8.8c-1.2-7,1.8-13.2,1.9-13.3c1.7-3.5-1.5-9-5.7-7c-3.8,1.8-4.2,8-2.9,11.4c0,0-6.1-4.4-3-17c3-12.6,20.9-12.3,20.9-12.3s14.9-0.9,22.1,11.6c0,0,5.1,10.7-2.1,17.5c0,0,2.6-8.8-3-8.6c-5.6,0.2-2.1,10.9-2.1,10.9S89.2,88.8,73.2,95.6z"/><path display="inline" fill="#E1B900" d="M71.2,75.6c0,0-3.4-3.1-2.8-8.5c0,0-1.4,2.7-3.7,4.3c0,0,0.3-4.5-1.5-9c-1.8-4.5-5.9-16.5,8.4-16.5c3.3,0,7,0.8,8.8,3.8c1.3,2,1.4,4.5,1.1,6.9c-0.3,2.3-1.3,4.2-2.1,6.3c-0.6,1.7-1.5,4.3-0.5,6c0,0-1.8,0-3.4-3.4C75.8,65.4,70,68.9,71.2,75.6z"/><path display="inline" fill="#F1D000" d="M71,60.8c0,0-8.3-14.1,0-14.1S71,60.8,71,60.8z"/><path display="inline" fill="#C9572B" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M76.1,140.9c0.2-2.5,2.8-5.6,3.4-8.3c0.8-3.3,0.7-6.8-0.3-10.1c-1.3-4.2-4.6-7.5-5.2-11.8c-3,5.8-5.8,13.2-2.5,19.4C73.3,133.5,75.7,137.5,76.1,140.9z"/><path display="inline" fill="#E1B900" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" d="M65.8,125.9c0,0-4.9-5.1-3.5-13.5c0,0,0.3-5.7,5.4-9.6c0,0,1.1,5.7,0,11.6C67.7,114.4,65.2,123,65.8,125.9z"/></g><g display="none"><g display="inline"><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="101.3" y1="10.6" x2="101.3" y2="2"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="98.7" y1="2" x2="103.8" y2="2"/></g><g display="inline"><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="119.5" y1="17.5" x2="119.5" y2="8.9"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="117" y1="8.9" x2="122" y2="8.9"/></g><polygon display="inline" fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" points="86,46 133.3,46 133.3,23.2 84.9,4.2 "/><linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="126.2912" y1="45.2918" x2="147.0415" y2="24.5415"><stop offset="0" style="stop-color:#589777"/><stop offset="0.4107" style="stop-color:#579677"/><stop offset="0.6145" style="stop-color:#549178"/><stop offset="0.7726" style="stop-color:#4E8879"/><stop offset="0.9066" style="stop-color:#457D7A"/><stop offset="1" style="stop-color:#3E717A"/></linearGradient><rect x="133.3" y="17.5" display="inline" fill="url(#SVGID_4_)" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6.7" height="34.8"/><polygon display="inline" opacity="0.2" fill="#4E440C" points="91,45.6 86,5.8 86,46 "/><polygon display="inline" opacity="0.2" fill="#4E440C" points="133.3,46 133.3,23.2 127.8,45.6 "/><path display="inline" fill="#08374A" d="M118.7,34.1c-0.2-1.3-1.1-2.5-3.7-3.5c-0.9-0.4-1.9-0.7-2.2-1.4c-0.1-0.4-0.1-0.6-0.1-0.9c0.2-0.8,1.1-1,1.9-0.8c0.5,0.2,0.9,0.5,1.2,1.1c1.3-0.8,1.3-0.8,2.2-1.4c-0.3-0.5-0.5-0.7-0.7-1c-0.8-0.9-1.8-1.3-3.5-1.3c-0.3,0-0.6,0.1-0.9,0.1c-0.8,0.2-1.6,0.6-2.1,1.2c-1.4,1.6-1,4.3,0.7,5.5c1.7,1.3,4.1,1.5,4.4,2.7c0.3,1.4-1.1,1.9-2.4,1.7c-1-0.2-1.5-0.7-2.1-1.6c-1.1,0.6-1.1,0.6-2.2,1.3c0.3,0.6,0.5,0.9,1,1.4c2.1,2.2,7.4,2.1,8.4-1.2C118.7,36,118.9,35.3,118.7,34.1z M107.7,25.2l-2.7,0c0,2.4,0,4.7,0,7.1c0,1.5,0.1,2.9-0.2,3.3c-0.4,0.8-1.4,0.7-1.9,0.6c-0.5-0.2-0.7-0.6-1-1.1c-0.1-0.1-0.1-0.2-0.2-0.3c-0.7,0.5-1.5,0.9-2.2,1.4c0.4,0.8,0.9,1.4,1.6,1.9c1,0.6,2.5,0.8,3.9,0.5c1-0.3,1.8-0.9,2.2-1.7c0.6-1.2,0.5-2.5,0.5-4.1C107.7,30.3,107.7,27.8,107.7,25.2z"/><line display="inline" fill="none" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="136.7" y1="17.5" x2="136.7" y2="12.5"/></g></svg>
             </div>
             <div class="wing-space"></div>
             <div class="wing-right">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 57.1 53.3" enable-background="new 0 0 57.1 53.3" xml:space="preserve"><g display="none"><g display="inline"><path fill="#F1D000" d="M-80.9,67c-0.5-1-5.1-9.6-2.8-13.6c0.5-0.9,1.7-2,4.1-2c2.4,0,3.5,1.1,4,2c2.2,4-3.1,12.7-3.7,13.7l-0.9,1.4L-80.9,67z"/><path fill="#08374A" d="M-79.6,52.3c8.3,0-0.5,14.1-0.5,14.1S-87.9,52.3-79.6,52.3 M-79.6,50.3c-2.9,0-4.3,1.4-5,2.5c-2.6,4.4,1.8,12.9,2.7,14.6l1.6,3l1.8-2.9c1-1.7,6.1-10.3,3.7-14.7C-75.3,51.7-76.7,50.3-79.6,50.3L-79.6,50.3z"/></g><g display="inline"><path fill="#E1B900" d="M-79.9,61.5c0,0,5.7-9.1,0.3-9.1C-85,52.3-79.9,61.5-79.9,61.5z"/></g></g><g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-44.2" y1="10.6" x2="-44.2" y2="2"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-41.6" y1="2" x2="-46.7" y2="2"/></g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-62.4" y1="17.5" x2="-62.4" y2="8.9"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-59.8" y1="8.9" x2="-64.9" y2="8.9"/></g><polygon fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" points="-28.9,46 -76.2,46 -76.2,23.2 -27.8,4.2 "/><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-1654.1771" y1="45.2918" x2="-1633.4268" y2="24.5415" gradientTransform="matrix(-1 0 0 1 -1723.3575 0)"><stop offset="0" style="stop-color:#589777"/><stop offset="0.4107" style="stop-color:#579677"/><stop offset="0.6145" style="stop-color:#549178"/><stop offset="0.7726" style="stop-color:#4E8879"/><stop offset="0.9066" style="stop-color:#457D7A"/><stop offset="1" style="stop-color:#3E717A"/></linearGradient><rect x="-82.9" y="17.5" fill="url(#SVGID_1_)" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6.7" height="34.8"/><polygon opacity="0.2" fill="#4E440C" points="-33.9,45.6 -28.9,5.8 -28.9,46 "/><polygon opacity="0.2" fill="#4E440C" points="-76.2,46 -76.2,23.2 -70.7,45.6 "/><path fill="#08374A" d="M-42.4,34.1c-0.2-1.3-1.1-2.5-3.7-3.5c-0.9-0.4-1.9-0.7-2.2-1.4c-0.1-0.4-0.1-0.6-0.1-0.9c0.2-0.8,1.1-1,1.9-0.8c0.5,0.2,0.9,0.5,1.2,1.1c1.3-0.8,1.3-0.8,2.2-1.4c-0.3-0.5-0.5-0.7-0.7-1c-0.8-0.9-1.8-1.3-3.5-1.3c-0.3,0-0.6,0.1-0.9,0.1c-0.8,0.2-1.6,0.6-2.1,1.2c-1.4,1.6-1,4.3,0.7,5.5c1.7,1.3,4.1,1.5,4.4,2.7c0.3,1.4-1.1,1.9-2.4,1.7c-1-0.2-1.5-0.7-2.1-1.6c-1.1,0.6-1.1,0.6-2.2,1.3c0.3,0.6,0.5,0.9,1,1.4c2.1,2.2,7.4,2.1,8.4-1.2C-42.5,36-42.2,35.3-42.4,34.1z M-53.4,25.2l-2.7,0c0,2.4,0,4.7,0,7.1c0,1.5,0.1,2.9-0.2,3.3c-0.4,0.8-1.4,0.7-1.9,0.6c-0.5-0.2-0.7-0.6-1-1.1c-0.1-0.1-0.1-0.2-0.2-0.3c-0.7,0.5-1.5,0.9-2.2,1.4c0.4,0.8,0.9,1.4,1.6,1.9c1,0.6,2.5,0.8,3.9,0.5c1-0.3,1.8-0.9,2.2-1.7c0.6-1.2,0.5-2.5,0.5-4.1C-53.4,30.3-53.4,27.8-53.4,25.2z"/><line fill="none" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-79.6" y1="17.5" x2="-79.6" y2="12.5"/></g><g display="none"><g display="inline"><path fill="#F1D000" d="M52.4,67c-0.6-1-5.9-9.7-3.7-13.7c0.5-0.9,1.6-2,4-2c2.4,0,3.6,1.1,4.1,2c2.4,4-2.2,12.6-2.8,13.6l-0.8,1.5L52.4,67z"/><path fill="#08374A" d="M52.8,52.3c8.3,0,0.5,14.1,0.5,14.1S44.5,52.3,52.8,52.3 M52.8,50.3c-2.9,0-4.2,1.4-4.9,2.5c-2.5,4.4,2.6,13,3.7,14.7l1.8,2.9l1.6-3c0.9-1.7,5.3-10.2,2.7-14.6C57.1,51.7,55.7,50.3,52.8,50.3L52.8,50.3z"/></g><g display="inline"><path fill="#E1B900" d="M53.2,61.5c0,0-5.7-9.1-0.3-9.1S53.2,61.5,53.2,61.5z"/></g></g><g display="none"><g display="inline"><g><polygon fill="#C1DDE4" points="-1.9,-110 -12.9,-106 -12.9,-124 "/><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-20.8892" y1="-111.0105" x2="-20.8892" y2="45.9895"><stop offset="0" style="stop-color:#BBD8D5"/><stop offset="1" style="stop-color:#FBFCFC"/></linearGradient><polygon fill="url(#SVGID_2_)" points="-12.9,46 -28.9,46 -24.9,-111 -12.9,-108 "/><linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-5.3892" y1="-110.0105" x2="-5.3892" y2="45.9895"><stop offset="0" style="stop-color:#7AB8CE"/><stop offset="1" style="stop-color:#78B298"/></linearGradient><polygon fill="url(#SVGID_3_)" points="2.1,46 -12.9,46 -12.9,-107 -1.9,-110 "/><polygon fill="#FFFFFF" points="-23.9,-110 -12.9,-107 -12.9,-124 "/></g><g><rect x="-9.9" y="36" fill="#65A58B" width="10" height="1"/><rect x="-7.9" y="38" fill="#65A58B" width="7" height="1"/><rect x="-9.9" y="40" fill="#65A58B" width="10" height="1"/></g></g><g display="inline"><path fill="#08374A" d="M-13.3-123.6l10.8,15.2l4,154.2h-29.8l4-154.2L-13.3-123.6 M-13.3-127l-1.6,2.2L-26-109.7l-0.4,0.5l0,0.6l-4,154.2l-0.1,2.2h2.1H1.5h2.1l-0.1-2.2l-4-154.2l0-0.6l-0.4-0.5l-10.8-15.1L-13.3-127L-13.3-127z"/></g></g><g display="none"><path display="inline" fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" d="M-10.7,95.6c0,0,3.3-4.9,3-9.5c-0.2-3.1-3.5-6.4-6.7-5.2c-3.5,1.2-4.4,5.2-4,8.5c0,0-6.1-1.9-7.2-8.8c-1.2-7,1.8-13.2,1.9-13.3c1.7-3.5-1.5-9-5.7-7c-3.8,1.8-4.2,8-2.9,11.4c0,0-6.1-4.4-3-17c3-12.6,20.9-12.3,20.9-12.3S0.5,41.3,7.7,53.9c0,0,5.1,10.7-2.1,17.5c0,0,2.6-8.8-3-8.6S0.5,73.7,0.5,73.7S5.4,88.8-10.7,95.6z"/><path display="inline" fill="#E1B900" d="M-12.7,75.6c0,0-3.4-3.1-2.8-8.5c0,0-1.4,2.7-3.7,4.3c0,0,0.3-4.5-1.5-9c-1.8-4.5-5.9-16.5,8.4-16.5c3.3,0,7,0.8,8.8,3.8c1.3,2,1.4,4.5,1.1,6.9c-0.3,2.3-1.3,4.2-2.1,6.3c-0.6,1.7-1.5,4.3-0.5,6c0,0-1.8,0-3.4-3.4C-8.1,65.4-13.9,68.9-12.7,75.6z"/><path display="inline" fill="#F1D000" d="M-12.9,60.8c0,0-8.3-14.1,0-14.1S-12.9,60.8-12.9,60.8z"/><path display="inline" fill="#C9572B" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M-7.8,140.9c0.2-2.5,2.8-5.6,3.4-8.3c0.8-3.3,0.7-6.8-0.3-10.1c-1.3-4.2-4.6-7.5-5.2-11.8c-3,5.8-5.8,13.2-2.5,19.4C-10.5,133.5-8.2,137.5-7.8,140.9z"/><path display="inline" fill="#E1B900" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" d="M-18.1,125.9c0,0-4.9-5.1-3.5-13.5c0,0,0.3-5.7,5.4-9.6c0,0,1.1,5.7,0,11.6C-16.2,114.4-18.7,123-18.1,125.9z"/></g><g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.4" y1="10.6" x2="17.4" y2="2"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="14.8" y1="2" x2="19.9" y2="2"/></g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="35.6" y1="17.5" x2="35.6" y2="8.9"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="33.1" y1="8.9" x2="38.2" y2="8.9"/></g><polygon fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" points="2.1,46 49.4,46 49.4,23.2 1,4.2 "/><linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="42.402" y1="45.2918" x2="63.1523" y2="24.5415"><stop offset="0" style="stop-color:#589777"/><stop offset="0.4107" style="stop-color:#579677"/><stop offset="0.6145" style="stop-color:#549178"/><stop offset="0.7726" style="stop-color:#4E8879"/><stop offset="0.9066" style="stop-color:#457D7A"/><stop offset="1" style="stop-color:#3E717A"/></linearGradient><rect x="49.4" y="17.5" fill="url(#SVGID_4_)" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6.7" height="34.8"/><polygon opacity="0.2" fill="#4E440C" points="7.1,45.6 2.1,5.8 2.1,46 "/><polygon opacity="0.2" fill="#4E440C" points="49.4,46 49.4,23.2 43.9,45.6 "/><path fill="#08374A" d="M34.8,34.1c-0.2-1.3-1.1-2.5-3.7-3.5c-0.9-0.4-1.9-0.7-2.2-1.4c-0.1-0.4-0.1-0.6-0.1-0.9c0.2-0.8,1.1-1,1.9-0.8c0.5,0.2,0.9,0.5,1.2,1.1c1.3-0.8,1.3-0.8,2.2-1.4c-0.3-0.5-0.5-0.7-0.7-1c-0.8-0.9-1.8-1.3-3.5-1.3c-0.3,0-0.6,0.1-0.9,0.1c-0.8,0.2-1.6,0.6-2.1,1.2c-1.4,1.6-1,4.3,0.7,5.5c1.7,1.3,4.1,1.5,4.4,2.7c0.3,1.4-1.1,1.9-2.4,1.7c-1-0.2-1.5-0.7-2.1-1.6c-1.1,0.6-1.1,0.6-2.2,1.3c0.3,0.6,0.5,0.9,1,1.4c2.1,2.2,7.4,2.1,8.4-1.2C34.8,36,35,35.3,34.8,34.1z M23.9,25.2l-2.7,0c0,2.4,0,4.7,0,7.1c0,1.5,0.1,2.9-0.2,3.3c-0.4,0.8-1.4,0.7-1.9,0.6c-0.5-0.2-0.7-0.6-1-1.1c-0.1-0.1-0.1-0.2-0.2-0.3c-0.7,0.5-1.5,0.9-2.2,1.4c0.4,0.8,0.9,1.4,1.6,1.9c1,0.6,2.5,0.8,3.9,0.5c1-0.3,1.8-0.9,2.2-1.7c0.6-1.2,0.5-2.5,0.5-4.1C23.9,30.3,23.9,27.8,23.9,25.2z"/><line fill="none" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="52.8" y1="17.5" x2="52.8" y2="12.5"/></g></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 57.1 53.3" enable-background="new 0 0 57.1 53.3" xml:space="preserve"><g display="none"><g display="inline"><path fill="#F1D000" d="M-80.9,67c-0.5-1-5.1-9.6-2.8-13.6c0.5-0.9,1.7-2,4.1-2c2.4,0,3.5,1.1,4,2c2.2,4-3.1,12.7-3.7,13.7l-0.9,1.4L-80.9,67z"/><path fill="#08374A" d="M-79.6,52.3c8.3,0-0.5,14.1-0.5,14.1S-87.9,52.3-79.6,52.3 M-79.6,50.3c-2.9,0-4.3,1.4-5,2.5c-2.6,4.4,1.8,12.9,2.7,14.6l1.6,3l1.8-2.9c1-1.7,6.1-10.3,3.7-14.7C-75.3,51.7-76.7,50.3-79.6,50.3L-79.6,50.3z"/></g><g display="inline"><path fill="#E1B900" d="M-79.9,61.5c0,0,5.7-9.1,0.3-9.1C-85,52.3-79.9,61.5-79.9,61.5z"/></g></g><g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-44.2" y1="10.6" x2="-44.2" y2="2"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-41.6" y1="2" x2="-46.7" y2="2"/></g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-62.4" y1="17.5" x2="-62.4" y2="8.9"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-59.8" y1="8.9" x2="-64.9" y2="8.9"/></g><polygon fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" points="-28.9,46 -76.2,46 -76.2,23.2 -27.8,4.2 "/><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-1654.1771" y1="45.2918" x2="-1633.4268" y2="24.5415" gradientTransform="matrix(-1 0 0 1 -1723.3575 0)"><stop offset="0" style="stop-color:#589777"/><stop offset="0.4107" style="stop-color:#579677"/><stop offset="0.6145" style="stop-color:#549178"/><stop offset="0.7726" style="stop-color:#4E8879"/><stop offset="0.9066" style="stop-color:#457D7A"/><stop offset="1" style="stop-color:#3E717A"/></linearGradient><rect x="-82.9" y="17.5" fill="url(#SVGID_1_)" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6.7" height="34.8"/><polygon opacity="0.2" fill="#4E440C" points="-33.9,45.6 -28.9,5.8 -28.9,46 "/><polygon opacity="0.2" fill="#4E440C" points="-76.2,46 -76.2,23.2 -70.7,45.6 "/><path fill="#08374A" d="M-42.4,34.1c-0.2-1.3-1.1-2.5-3.7-3.5c-0.9-0.4-1.9-0.7-2.2-1.4c-0.1-0.4-0.1-0.6-0.1-0.9c0.2-0.8,1.1-1,1.9-0.8c0.5,0.2,0.9,0.5,1.2,1.1c1.3-0.8,1.3-0.8,2.2-1.4c-0.3-0.5-0.5-0.7-0.7-1c-0.8-0.9-1.8-1.3-3.5-1.3c-0.3,0-0.6,0.1-0.9,0.1c-0.8,0.2-1.6,0.6-2.1,1.2c-1.4,1.6-1,4.3,0.7,5.5c1.7,1.3,4.1,1.5,4.4,2.7c0.3,1.4-1.1,1.9-2.4,1.7c-1-0.2-1.5-0.7-2.1-1.6c-1.1,0.6-1.1,0.6-2.2,1.3c0.3,0.6,0.5,0.9,1,1.4c2.1,2.2,7.4,2.1,8.4-1.2C-42.5,36-42.2,35.3-42.4,34.1z M-53.4,25.2l-2.7,0c0,2.4,0,4.7,0,7.1c0,1.5,0.1,2.9-0.2,3.3c-0.4,0.8-1.4,0.7-1.9,0.6c-0.5-0.2-0.7-0.6-1-1.1c-0.1-0.1-0.1-0.2-0.2-0.3c-0.7,0.5-1.5,0.9-2.2,1.4c0.4,0.8,0.9,1.4,1.6,1.9c1,0.6,2.5,0.8,3.9,0.5c1-0.3,1.8-0.9,2.2-1.7c0.6-1.2,0.5-2.5,0.5-4.1C-53.4,30.3-53.4,27.8-53.4,25.2z"/><line fill="none" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-79.6" y1="17.5" x2="-79.6" y2="12.5"/></g><g display="none"><g display="inline"><path fill="#F1D000" d="M52.4,67c-0.6-1-5.9-9.7-3.7-13.7c0.5-0.9,1.6-2,4-2c2.4,0,3.6,1.1,4.1,2c2.4,4-2.2,12.6-2.8,13.6l-0.8,1.5L52.4,67z"/><path fill="#08374A" d="M52.8,52.3c8.3,0,0.5,14.1,0.5,14.1S44.5,52.3,52.8,52.3 M52.8,50.3c-2.9,0-4.2,1.4-4.9,2.5c-2.5,4.4,2.6,13,3.7,14.7l1.8,2.9l1.6-3c0.9-1.7,5.3-10.2,2.7-14.6C57.1,51.7,55.7,50.3,52.8,50.3L52.8,50.3z"/></g><g display="inline"><path fill="#E1B900" d="M53.2,61.5c0,0-5.7-9.1-0.3-9.1S53.2,61.5,53.2,61.5z"/></g></g><g display="none"><g display="inline"><g><polygon fill="#C1DDE4" points="-1.9,-110 -12.9,-106 -12.9,-124 "/><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-20.8892" y1="-111.0105" x2="-20.8892" y2="45.9895"><stop offset="0" style="stop-color:#BBD8D5"/><stop offset="1" style="stop-color:#FBFCFC"/></linearGradient><polygon fill="url(#SVGID_2_)" points="-12.9,46 -28.9,46 -24.9,-111 -12.9,-108 "/><linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-5.3892" y1="-110.0105" x2="-5.3892" y2="45.9895"><stop offset="0" style="stop-color:#7AB8CE"/><stop offset="1" style="stop-color:#78B298"/></linearGradient><polygon fill="url(#SVGID_3_)" points="2.1,46 -12.9,46 -12.9,-107 -1.9,-110 "/><polygon fill="#FFFFFF" points="-23.9,-110 -12.9,-107 -12.9,-124 "/></g><g><rect x="-9.9" y="36" fill="#65A58B" width="10" height="1"/><rect x="-7.9" y="38" fill="#65A58B" width="7" height="1"/><rect x="-9.9" y="40" fill="#65A58B" width="10" height="1"/></g></g><g display="inline"><path fill="#08374A" d="M-13.3-123.6l10.8,15.2l4,154.2h-29.8l4-154.2L-13.3-123.6 M-13.3-127l-1.6,2.2L-26-109.7l-0.4,0.5l0,0.6l-4,154.2l-0.1,2.2h2.1H1.5h2.1l-0.1-2.2l-4-154.2l0-0.6l-0.4-0.5l-10.8-15.1L-13.3-127L-13.3-127z"/></g></g><g display="none"><path display="inline" fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" d="M-10.7,95.6c0,0,3.3-4.9,3-9.5c-0.2-3.1-3.5-6.4-6.7-5.2c-3.5,1.2-4.4,5.2-4,8.5c0,0-6.1-1.9-7.2-8.8c-1.2-7,1.8-13.2,1.9-13.3c1.7-3.5-1.5-9-5.7-7c-3.8,1.8-4.2,8-2.9,11.4c0,0-6.1-4.4-3-17c3-12.6,20.9-12.3,20.9-12.3S0.5,41.3,7.7,53.9c0,0,5.1,10.7-2.1,17.5c0,0,2.6-8.8-3-8.6S0.5,73.7,0.5,73.7S5.4,88.8-10.7,95.6z"/><path display="inline" fill="#E1B900" d="M-12.7,75.6c0,0-3.4-3.1-2.8-8.5c0,0-1.4,2.7-3.7,4.3c0,0,0.3-4.5-1.5-9c-1.8-4.5-5.9-16.5,8.4-16.5c3.3,0,7,0.8,8.8,3.8c1.3,2,1.4,4.5,1.1,6.9c-0.3,2.3-1.3,4.2-2.1,6.3c-0.6,1.7-1.5,4.3-0.5,6c0,0-1.8,0-3.4-3.4C-8.1,65.4-13.9,68.9-12.7,75.6z"/><path display="inline" fill="#F1D000" d="M-12.9,60.8c0,0-8.3-14.1,0-14.1S-12.9,60.8-12.9,60.8z"/><path display="inline" fill="#C9572B" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M-7.8,140.9c0.2-2.5,2.8-5.6,3.4-8.3c0.8-3.3,0.7-6.8-0.3-10.1c-1.3-4.2-4.6-7.5-5.2-11.8c-3,5.8-5.8,13.2-2.5,19.4C-10.5,133.5-8.2,137.5-7.8,140.9z"/><path display="inline" fill="#E1B900" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" d="M-18.1,125.9c0,0-4.9-5.1-3.5-13.5c0,0,0.3-5.7,5.4-9.6c0,0,1.1,5.7,0,11.6C-16.2,114.4-18.7,123-18.1,125.9z"/></g><g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.4" y1="10.6" x2="17.4" y2="2"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="14.8" y1="2" x2="19.9" y2="2"/></g><g><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="35.6" y1="17.5" x2="35.6" y2="8.9"/><line fill="none" stroke="#08374A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="33.1" y1="8.9" x2="38.2" y2="8.9"/></g><polygon fill="#F1D000" stroke="#08374A" stroke-width="2" stroke-miterlimit="10" points="2.1,46 49.4,46 49.4,23.2 1,4.2 "/><linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="42.402" y1="45.2918" x2="63.1523" y2="24.5415"><stop offset="0" style="stop-color:#589777"/><stop offset="0.4107" style="stop-color:#579677"/><stop offset="0.6145" style="stop-color:#549178"/><stop offset="0.7726" style="stop-color:#4E8879"/><stop offset="0.9066" style="stop-color:#457D7A"/><stop offset="1" style="stop-color:#3E717A"/></linearGradient><rect x="49.4" y="17.5" fill="url(#SVGID_4_)" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="6.7" height="34.8"/><polygon opacity="0.2" fill="#4E440C" points="7.1,45.6 2.1,5.8 2.1,46 "/><polygon opacity="0.2" fill="#4E440C" points="49.4,46 49.4,23.2 43.9,45.6 "/><line fill="none" stroke="#08374A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="52.8" y1="17.5" x2="52.8" y2="12.5"/></g></svg>
             </div>
           </div>
           <div class="fires-obelisk">
@@ -448,7 +307,7 @@ recheckStreamingTime();
 
         <figure class="stat">
           <div class="stat-number">
-            <div class="wow animated fadeIn" data-wow-delay=".5s">
+            <div class="wow animated fadeIn" >
             <strong>195476</strong>
             Lines Of Code
             </div>
@@ -458,7 +317,7 @@ recheckStreamingTime();
 
         <figure class="stat">
           <div class="stat-number">
-            <div class="wow animated fadeIn" data-wow-delay="1s">
+            <div class="wow animated fadeIn">
             <strong>24</strong>
             Hours
             </div>
@@ -468,7 +327,7 @@ recheckStreamingTime();
 
         <figure class="stat">
           <div class="stat-number">
-            <div class="wow animated fadeIn" data-wow-delay="1.5s">
+            <div class="wow animated fadeIn" >
             <strong>3562</strong>
             Cups of Coffee
             </div>
@@ -533,13 +392,6 @@ recheckStreamingTime();
                   c0-0.1,0.1-0.2,0.2-0.2H48.3 M48.3,12.2H27.9c-2.3,0-4.2,1.9-4.2,4.2v20.4c0,2.3,1.9,4.2,4.2,4.2h20.4c2.3,0,4.2-1.9,4.2-4.2
                   V16.4C52.5,14.1,50.6,12.2,48.3,12.2L48.3,12.2z"/>
               </g>
-              <path fill="#0C374E" d="M46.6,31.9c-0.1-0.9-0.8-1.7-2.5-2.4c-0.6-0.3-1.3-0.5-1.5-1c-0.1-0.3-0.1-0.4,0-0.6
-                c0.1-0.5,0.8-0.7,1.3-0.6c0.3,0.1,0.6,0.4,0.8,0.8c0.9-0.6,0.9-0.6,1.5-1c-0.2-0.3-0.3-0.5-0.5-0.7c-0.5-0.6-1.2-0.9-2.4-0.9
-                c-0.2,0-0.4,0.1-0.6,0.1c-0.6,0.1-1.1,0.4-1.4,0.9c-1,1.1-0.7,3,0.5,3.8c1.2,0.9,2.9,1.1,3.1,1.9c0.2,1-0.7,1.3-1.7,1.2
-                c-0.7-0.1-1.1-0.5-1.5-1.1c-0.8,0.4-0.8,0.4-1.5,0.9c0.2,0.4,0.4,0.6,0.7,0.9c1.5,1.5,5.2,1.4,5.8-0.8
-                C46.6,33.2,46.8,32.7,46.6,31.9z M39,25.7h-1.9c0,1.6,0,3.3,0,4.9c0,1,0.1,2-0.1,2.3c-0.3,0.6-1,0.5-1.3,0.4
-                c-0.3-0.2-0.5-0.4-0.7-0.7c-0.1-0.1-0.1-0.2-0.1-0.2c-0.5,0.3-1,0.6-1.5,0.9c0.3,0.5,0.6,1,1.1,1.3c0.7,0.4,1.7,0.6,2.7,0.3
-                c0.7-0.2,1.2-0.6,1.5-1.2C39.1,33,39,32,39,31C39,29.2,39,27.5,39,25.7z"/>
             </g>
           </g>
           </svg>
@@ -567,7 +419,7 @@ recheckStreamingTime();
               <h6>Location: BR Auditorium</h6>
               <span class="more">+</span>
               <div class="details">
-                <p>Selected teams will be registered on arrival at the venue. Please bring a printout of the selection e-mail. Reaching the venue in advance will ensure a speedy process as the registration desk will close at 8:00 PM. Payment for food and accommodation (optional) can be done upon registration. </p>
+                <p>Selected teams will have to register at the venue.Please reach on time as  registration desk will close at 8:00 PM.</p>
                 <div class="actions">
                   <a href="#" class="button md-close"></a>
                 </div>
@@ -584,7 +436,7 @@ recheckStreamingTime();
               <h5>Briefing</h5>
               <span class="more">+</span>
               <div class="details">
-                <p>The theme of the hackathon will be announced at this time. Participants will be informed of the code of conduct and necessary rules to be followed during the hackathon. You can also read the rules for HackDTU 2.0 <a href="#rules">here</a> The teams will be allotted venues and dispersed to their respective locations.</p>
+                <p>The theme of the hackathon will be announced. Participants will be informed of the code of conduct and necessary rules to be followed during the hackathon. You can also read the rules for HackDTU 2.0 <a href="#rules">here</a> The teams will be allotted venues and dispersed to their respective locations.</p>
                 <div class="actions">
                   <a href="#" class="button md-close"></a>
                 </div>
@@ -593,7 +445,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp" id="sebastian-markbage">
+        <li class="wow fadeInUp" id="sebastian-markbage">
           <h5 class="time">8:30 pm</h5>
           <div class="subject">
             <div class="description">
@@ -605,7 +457,7 @@ recheckStreamingTime();
         <li class="break wow fadeInUp">
           <h5 class="time">10:30 pm</h5>
           <div class="break-icon">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="69.4px" height="60.3px" viewBox="0 0 69.4 60.3" enable-background="new 0 0 69.4 60.3" xml:space="preserve"><path fill="none" stroke="#23394E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M61.5,29.5h-8.9V11h8.9c2.4,0,4.4,2,4.4,4.4v9.7C65.9,27.5,64,29.5,61.5,29.5z"/><path fill="#F2CA30" stroke="#23394E" stroke-width="5.902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M10.1,3h41.2c1.8,0,3.3,1.5,3.3,3.3v27.3c0,9.5-7.7,17.2-17.2,17.2H24c-9.5,0-17.2-7.7-17.2-17.2V6.2C6.8,4.4,8.3,3,10.1,3z"/><path fill="#23394E" d="M45.1,33.1c-0.2-1.3-1.1-2.5-3.7-3.5c-0.9-0.4-1.9-0.7-2.2-1.4c-0.1-0.4-0.1-0.6-0.1-0.9c0.2-0.8,1.1-1,1.9-0.8c0.5,0.2,0.9,0.5,1.2,1.1c1.3-0.8,1.3-0.8,2.2-1.4c-0.3-0.5-0.5-0.7-0.7-1c-0.8-0.9-1.8-1.3-3.5-1.3c-0.3,0-0.6,0.1-0.9,0.1c-0.8,0.2-1.6,0.6-2.1,1.2c-1.4,1.6-1,4.3,0.7,5.5c1.7,1.3,4.1,1.5,4.4,2.7c0.3,1.4-1.1,1.9-2.4,1.7c-1-0.2-1.5-0.7-2.1-1.6c-1.1,0.6-1.1,0.6-2.2,1.3c0.3,0.6,0.5,0.9,1,1.4c2.1,2.2,7.4,2.1,8.4-1.2C45,35,45.3,34.2,45.1,33.1z M34.1,24.1l-2.7,0c0,2.4,0,4.7,0,7.1c0,1.5,0.1,2.9-0.2,3.3c-0.4,0.8-1.4,0.7-1.9,0.6c-0.5-0.2-0.7-0.6-1-1.1c-0.1-0.1-0.1-0.2-0.2-0.3c-0.7,0.5-1.5,0.9-2.2,1.4c0.4,0.8,0.9,1.4,1.6,1.9c1,0.6,2.5,0.8,3.9,0.5c1-0.3,1.8-0.9,2.2-1.7c0.6-1.2,0.5-2.5,0.5-4.1C34.1,29.2,34.1,26.7,34.1,24.1z"/><line fill="none" stroke="#23394E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="3.5" y1="56.8" x2="57.9" y2="56.8"/><line fill="none" stroke="#F8E196" stroke-width="7.4079" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="18.7" y1="14.6" x2="18.7" y2="33.1"/><polygon opacity="0.2" fill="#49401E" points="51.7,14.9 9.8,5.9 51.7,5.9 "/></svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="69.4px" height="60.3px" viewBox="0 0 69.4 60.3" enable-background="new 0 0 69.4 60.3" xml:space="preserve"><path fill="none" stroke="#23394E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M61.5,29.5h-8.9V11h8.9c2.4,0,4.4,2,4.4,4.4v9.7C65.9,27.5,64,29.5,61.5,29.5z"/><path fill="#F2CA30" stroke="#23394E" stroke-width="5.902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M10.1,3h41.2c1.8,0,3.3,1.5,3.3,3.3v27.3c0,9.5-7.7,17.2-17.2,17.2H24c-9.5,0-17.2-7.7-17.2-17.2V6.2C6.8,4.4,8.3,3,10.1,3z"/><line fill="none" stroke="#23394E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="3.5" y1="56.8" x2="57.9" y2="56.8"/><line fill="none" stroke="#F8E196" stroke-width="7.4079" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="18.7" y1="14.6" x2="18.7" y2="33.1"/><polygon opacity="0.2" fill="#49401E" points="51.7,14.9 9.8,5.9 51.7,5.9 "/></svg>
           </div>
           <div class="subject icon break">
             <h5 class="single-line">Dinner</h5>
@@ -634,13 +486,13 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp" id="evangelina-ferreira">
+        <li class=" wow fadeInUp" id="evangelina-ferreira">
           <h5 class="time">3:00 am</h5>
           <div class="subject">
             <div class="description">
               <img src="static/images/speakers/result.png" height="96" class="avatar" alt="">
               <h5>Results of the first evaluation will be announced</h5>
-              <span class="more">+</span>
+              
               <div class="details">
 
                 <div class="actions">
@@ -686,7 +538,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp odd" id="sara-chipps">
+        <li class="wow fadeInUp odd" id="sara-chipps">
           <h5 class="time">8:00 am</h5>
           <div class="subject">
             <div class="description">
@@ -724,7 +576,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp odd" id="nikolai-bachiyski">
+        <li class="wow fadeInUp odd" id="nikolai-bachiyski">
           <h5 class="time">12:00 pm</h5>
           <div class="subject">
             <div class="description">
@@ -734,7 +586,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp" id="alex-sexton">
+        <li class="wow fadeInUp" id="alex-sexton">
           <h5 class="time">1:00 pm</h5>
           <div class="subject">
             <div class="description">
@@ -747,14 +599,14 @@ recheckStreamingTime();
         <li class="break wow fadeInUp">
           <h5 class="time">1:30 pm</h5>
           <div class="break-icon">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="69.4px" height="60.3px" viewBox="0 0 69.4 60.3" enable-background="new 0 0 69.4 60.3" xml:space="preserve"><path fill="none" stroke="#23394E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M61.5,29.5h-8.9V11h8.9c2.4,0,4.4,2,4.4,4.4v9.7C65.9,27.5,64,29.5,61.5,29.5z"/><path fill="#F2CA30" stroke="#23394E" stroke-width="5.902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M10.1,3h41.2c1.8,0,3.3,1.5,3.3,3.3v27.3c0,9.5-7.7,17.2-17.2,17.2H24c-9.5,0-17.2-7.7-17.2-17.2V6.2C6.8,4.4,8.3,3,10.1,3z"/><path fill="#23394E" d="M45.1,33.1c-0.2-1.3-1.1-2.5-3.7-3.5c-0.9-0.4-1.9-0.7-2.2-1.4c-0.1-0.4-0.1-0.6-0.1-0.9c0.2-0.8,1.1-1,1.9-0.8c0.5,0.2,0.9,0.5,1.2,1.1c1.3-0.8,1.3-0.8,2.2-1.4c-0.3-0.5-0.5-0.7-0.7-1c-0.8-0.9-1.8-1.3-3.5-1.3c-0.3,0-0.6,0.1-0.9,0.1c-0.8,0.2-1.6,0.6-2.1,1.2c-1.4,1.6-1,4.3,0.7,5.5c1.7,1.3,4.1,1.5,4.4,2.7c0.3,1.4-1.1,1.9-2.4,1.7c-1-0.2-1.5-0.7-2.1-1.6c-1.1,0.6-1.1,0.6-2.2,1.3c0.3,0.6,0.5,0.9,1,1.4c2.1,2.2,7.4,2.1,8.4-1.2C45,35,45.3,34.2,45.1,33.1z M34.1,24.1l-2.7,0c0,2.4,0,4.7,0,7.1c0,1.5,0.1,2.9-0.2,3.3c-0.4,0.8-1.4,0.7-1.9,0.6c-0.5-0.2-0.7-0.6-1-1.1c-0.1-0.1-0.1-0.2-0.2-0.3c-0.7,0.5-1.5,0.9-2.2,1.4c0.4,0.8,0.9,1.4,1.6,1.9c1,0.6,2.5,0.8,3.9,0.5c1-0.3,1.8-0.9,2.2-1.7c0.6-1.2,0.5-2.5,0.5-4.1C34.1,29.2,34.1,26.7,34.1,24.1z"/><line fill="none" stroke="#23394E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="3.5" y1="56.8" x2="57.9" y2="56.8"/><line fill="none" stroke="#F8E196" stroke-width="7.4079" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="18.7" y1="14.6" x2="18.7" y2="33.1"/><polygon opacity="0.2" fill="#49401E" points="51.7,14.9 9.8,5.9 51.7,5.9 "/></svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="69.4px" height="60.3px" viewBox="0 0 69.4 60.3" enable-background="new 0 0 69.4 60.3" xml:space="preserve"><path fill="none" stroke="#23394E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M61.5,29.5h-8.9V11h8.9c2.4,0,4.4,2,4.4,4.4v9.7C65.9,27.5,64,29.5,61.5,29.5z"/><path fill="#F2CA30" stroke="#23394E" stroke-width="5.902" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M10.1,3h41.2c1.8,0,3.3,1.5,3.3,3.3v27.3c0,9.5-7.7,17.2-17.2,17.2H24c-9.5,0-17.2-7.7-17.2-17.2V6.2C6.8,4.4,8.3,3,10.1,3z"/><line fill="none" stroke="#23394E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="3.5" y1="56.8" x2="57.9" y2="56.8"/><line fill="none" stroke="#F8E196" stroke-width="7.4079" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="18.7" y1="14.6" x2="18.7" y2="33.1"/><polygon opacity="0.2" fill="#49401E" points="51.7,14.9 9.8,5.9 51.7,5.9 "/></svg>
           </div>
           <div class="subject icon break">
             <h5 class="single-line">Lunch</h5>
           </div>
         </li>
 
-        <li class="talk wow fadeInUp odd" id="nathan-rajlich">
+        <li class="wow fadeInUp odd" id="nathan-rajlich">
           <h5 class="time">4:00 pm</h5>
           <div class="subject">
             <div class="description">
@@ -798,7 +650,7 @@ recheckStreamingTime();
           </div>
         </li>
 
-        <li class="talk wow fadeInUp" id="alvaro-videla">
+        <li class="wow fadeInUp" id="alvaro-videla">
           <h5 class="time">6:00 pm</h5>
           <div class="subject">
             <div class="description">
@@ -816,7 +668,7 @@ recheckStreamingTime();
               <h5>Prize Distribution</h5>
               <span class="more">+</span>
               <div class="details">
-                <p>The winning team with the best pitch will be announced and the top 3 teams will recieve the prize of a lifetime ;) </p>
+                <p>The winning team with the best pitch will be announced.Only the top team will get the prize. </p>
                 <div class="actions">
                   <a href="#" class="button md-close"></a>
                 </div>
@@ -878,76 +730,7 @@ recheckStreamingTime();
   </section>
 
   <a name="tickets"></a>
-  <section class="section-tickets">
-
-    <div class="container">
-
-      <h1>
-        <div class="ticket-svg">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 86 86.5" enable-background="new 0 0 86 86.5" xml:space="preserve">
-          <g>
-            <g class="wow ticket-svg-animation">
-              <path fill="#FFCC06" stroke="#0C374E" stroke-width="5.9016" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-              M54.5,3c0,6.3-5.1,11.5-11.5,11.5c-6.3,0-11.5-5.1-11.5-11.5H14.3v80.4h57.3V3L54.5,3L54.5,3z"/>
-            <polygon opacity="0.2" fill="#4C3F17" points="71.7,72.4 12.6,80.6 71.7,80.6   "/>
-            <g>
-              <path fill="#FFCB06" d="M27.9,68c-1.3,0-2.3-1-2.3-2.3V35.3c0-1.3,1-2.3,2.3-2.3h30.4c1.3,0,2.3,1,2.3,2.3v30.4
-                c0,1.3-1,2.3-2.3,2.3H27.9z"/>
-              <path fill="#0C374E" d="M58.3,35c0.2,0,0.3,0.1,0.3,0.3v30.4c0,0.2-0.1,0.3-0.3,0.3H27.9c-0.2,0-0.3-0.1-0.3-0.3V35.3
-                c0-0.2,0.1-0.3,0.3-0.3H58.3 M58.3,31H27.9c-2.4,0-4.3,1.9-4.3,4.3v30.4c0,2.4,1.9,4.3,4.3,4.3h30.4c2.4,0,4.3-1.9,4.3-4.3V35.3
-                C62.6,32.9,60.7,31,58.3,31L58.3,31z"/>
-            </g>
-            <path fill="#0C374E" d="M55.8,58.5c-0.2-1.4-1.1-2.6-3.8-3.6c-0.9-0.4-2-0.7-2.3-1.4c-0.1-0.4-0.1-0.6-0.1-0.9
-              c0.2-0.8,1.2-1.1,1.9-0.8c0.5,0.2,1,0.5,1.2,1.1c1.3-0.8,1.3-0.8,2.2-1.4c-0.3-0.5-0.5-0.8-0.7-1c-0.8-0.9-1.9-1.3-3.6-1.3
-              c-0.3,0-0.6,0.1-0.9,0.1c-0.9,0.2-1.7,0.7-2.2,1.3c-1.4,1.6-1,4.5,0.7,5.7c1.7,1.3,4.3,1.6,4.6,2.8c0.3,1.5-1.1,2-2.5,1.8
-              c-1-0.2-1.6-0.7-2.2-1.7c-1.1,0.7-1.1,0.7-2.3,1.3c0.3,0.6,0.6,0.9,1,1.4c2.2,2.2,7.7,2.1,8.7-1.3C55.8,60.4,56.1,59.7,55.8,58.5z
-               M44.4,49.3h-2.8c0,2.5,0,4.9,0,7.4c0,1.6,0.1,3-0.2,3.4c-0.4,0.9-1.5,0.8-2,0.6c-0.5-0.2-0.8-0.6-1-1.1c-0.1-0.1-0.1-0.3-0.2-0.3
-              c-0.8,0.5-1.5,0.9-2.3,1.4c0.4,0.8,1,1.5,1.7,1.9c1.1,0.7,2.5,0.8,4.1,0.5c1-0.3,1.8-0.9,2.3-1.8c0.6-1.2,0.5-2.6,0.5-4.2
-              C44.5,54.5,44.4,51.9,44.4,49.3z"/>
-            <g>
-              <g>
-                <line fill="none" stroke="#0C374E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="14.3" y1="22.8" x2="16.3" y2="22.8"/>
-
-                <line fill="none" stroke="#0C374E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.1073,10.2682" x1="26.6" y1="22.8" x2="64.6" y2="22.8"/>
-
-                <line fill="none" stroke="#0C374E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="69.7" y1="22.8" x2="71.7" y2="22.8"/>
-              </g>
-            </g>
-              </g>
-            <line fill="none" stroke="#0C374E" stroke-width="6.3643" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="3.2" y1="83.3" x2="82.8" y2="83.3"/>
-          </g>
-          </svg>
-        </div>
-        JSConf 2014 Tickets
-      </h1>
-
-
-      <div class="tickets-content-gone" style="display:block;">
-        <figure>
-          <img src="static/images/tickets-gone.png" alt=":(" />
-        </figure>
-
-        <h2>All Tickets for JSConf 2014 have sold out :(</h2>
-        <p>Sign up and we'll contact us if we get our hands on a few more tickets. No promises, though.</p>
-
-        <br/><br/>
-
-        <form class="signup-form" action="https://devthought.us4.list-manage.com/subscribe/post?u=33875ea2facba4ce8d8bc0d66&amp;id=8c9110b9d4" validate method="post" target="_blank">
-          <div class="input-group">
-            <input type="email" name="EMAIL" value="" placeholder="Let me know when to come back" required />
-            <span class="submit"><button type="submit"><span class="icon icon-send-yellow"></span></button></span>
-          </div>
-          <input type="hidden" name="b_33875ea2facba4ce8d8bc0d66_8c9110b9d4" tabindex="-1" value="">
-          <input type="hidden" name="subscribe" value="Subscribe" />
-        </form>
-
-      </div>
-
-    </div>
-
-  </section>
-
+  
   <section class="section-sponsors">
 
     <h1>
@@ -967,33 +750,70 @@ recheckStreamingTime();
             </svg>
         </div>
 
-        Our Sponsors
+        Our Past Sponsors
     </h1>
 
-    <ul class="sponsor-list sponsors-platinum wow animated fadeInDown">
-      <li class="sponsor"><img src="static/images/sponsors/cisco-logo.png" alt="cisco"/></a></li>
+    <div class="row" style="text-align: center;">
+            <div class="col-md-12">
+                <a href="http://www.cisco.com/" target="_blank"><img src="static/images/sponsors/300x300.jpg" alt="Cisco"/></a>
+            </div>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col-md-4">
+                <a href="http://www.jio.com/" target="_blank"><img src="static/images/sponsors/275x275x1.jpg" alt="JIO"/></a>
+            </div>
+            <div class="col-md-4">
+                <a href="http://www.restdb.io/" target="_blank"><img src="static/images/sponsors/275x275x2.jpg" alt="Restdb"/></a>
+            </div>
+            <div class="col-md-4">
+                <a href="http://aztek.in/" target="_blank"><img src="static/images/sponsors/275x275x3.jpg"
+                                                                alt="Synergy Enterprises"/></a>
+            </div>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col-md-3">
+                <a href="http://www.doselect.com/" target="_blank"><img src="static/images/sponsors/250x250x1.jpg" alt="doselect"/></a>
+            </div>
+            <div class="col-md-3">
+                <a href="http://www.hackerearth.com/" target="_blank"><img src="static/images/sponsors/250x250x2.jpg"
+                                                                           alt="hackerearth"/></a>
+            </div>
+            <div class="col-md-3">
+                <a href="http://www.digitalocean.com/" target="_blank"><img src="static/images/sponsors/250x250x3.jpg"
+                                                                            alt="digitalocean"/></a>
+            </div>
+            <div class="col-md-3">
+                <a href="http://www.sendgrid.com/" target="_blank"><img src="static/images/sponsors/250x250x4.jpg" alt="sendgrid"/></a>
+            </div>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col-md-2">
+                <a href="http://www.jetbrains.com/" target="_blank"><img src="static/images/sponsors/200x200x1.jpg"
+                                                                         alt="jetbrains"/></a>
+            </div>
+            <div class="col-md-2">
+                <a href="http://www.collegemedia.in" target="_blank"><img src="static/images/sponsors/200x200x2.jpg"
+                                                                          alt="collegemedia"/></a>
+            </div>
+            <div class="col-md-2">
+                <a href="http://www.solindia.co.in/" target="_blank"><img src="static/images/sponsors/200x200x3.jpg"
+                                                                          alt="solindia"/></a>
+            </div>
+            <div class="col-md-2">
+                <a href="http://www.restdb.io/" target="_blank"><img src="static/images/sponsors/200x200x4.jpg" alt="startupoint"/></a>
+            </div>
+            <div class="col-md-2">
+                <a href="http://www.shopclues.com/" target="_blank"><img src="static/images/sponsors/200x200x5.jpg"
+                                                                         alt="shopclues"/></a>
+            </div>
+            <div class="col-md-2">
+                <a href="#"><img src="static/images/sponsors/200x200x6.jpg" alt="I food You"/></a>
+            </div>
 
-    </ul>
+	<a href="india.pdf" target="blank"><button class="brochure-button wow fadeInUp" style="color:#2a6496;"><i class="fa fa-download" aria-hidden="true"></i>Sponsorship Brochure-India </button</a>
+	
+	<a href="international.pdf" target="blank"><button class="brochure-button wow fadeInUp" style="color:#2a6496;"><i class="fa fa-download" aria-hidden="true"></i>Sponsorship Brochure-International</button</a>
 
-    <ul class="sponsor-list sponsors-gold wow animated fadeInUp" data-wow-delay=".1s">
-      <li class="sponsor"><img src="static/images/sponsors/jio-logo.png" alt="jio"/></a></li>
-      <li class="sponsor"><img src="static/images/sponsors/restdb-logo.png" alt="restdb"/></a></li>
-      <li class="sponsor"><img src="static/images/sponsors/synergy-logo.png" alt="synergy"/></a></li>
-
-    </ul>
-
-    <ul class="sponsor-list sponsors-startup wow animated fadeInUp" data-wow-delay=".1s">
-      <li class="sponsor"><img src="static/images/sponsors/do-logo.png" alt="doselect"/></a></li>
-      <li class="sponsor"><img src="static/images/sponsors/hacker-logo.png" alt="hackerearth"/></a></li>
-      <li class="sponsor"><img src="static/images/sponsors/digital-logo.png" alt="digitalocean"/></a></li>
-      <li class="sponsor"><img src="static/images/sponsors/sendgrid-logo.png" alt="sendgrid"/></a></li>
-      <li class="sponsor"><<img src="static/images/sponsors/jet-logo.png" alt="jetbrains"/></a></li>
-      <li class="sponsor"><img src="static/images/sponsors/cm-logo.png" alt="college media"/></a></li>
-      <li class="sponsor"><img src="static/images/sponsors/sol-logo.png" alt="sol india"/></a></li>
-      <li class="sponsor"><img src="static/images/sponsors/photo.jpg" alt="startupoint"/></a></li>
-      <li class="sponsor"><img src="static/images/sponsors/shop-logo.png" alt="shopclues"/></a></li>
-      <li class="sponsor"><<img src="static/images/sponsors/ifoodyou-logo.jpg" alt="ifoodyou"/></a></li>
-    </ul>
 
   </section>
 
@@ -1022,7 +842,7 @@ recheckStreamingTime();
         Rules
       </h1>
 
-      <ul class="housing-list wow animated fadeInUp animated" data-wow-delay="1s"">
+      <ul class="housing-list wow animated fadeInUp animated" >
 
         <li>The decision of organizers is final for selecting the teams for the event.</li>
         <li>You must be at allotted location in DTU to work on a project for submission.</li>
@@ -1094,7 +914,7 @@ recheckStreamingTime();
                               <div id="tab-faq4" class="tab-pane fade">
                                   <div>
                                     <p>
-                                      Drop us a mail and we would be more than happy to answer your queries. Also feel free to write if you'd like to volunteer for the event!
+                                      Drop us a <a href="mailto: contact@iosd.tech">mail</a> and we would be more than happy to answer your queries. Also feel free to write if you'd like to volunteer for the event!
                                       </p>
                                   </div>
                               </div>
@@ -1111,10 +931,12 @@ recheckStreamingTime();
 
     <div class="container">
       <small>IOSD-DTU, all rights reserved &copy; 2017</small>
-
-      <p>Follow us on <a href="https://twitter.com/iosoftwared" target="_blank">Twitter</a> or <a href="mailto:rauchg@gmail.com?Subject=Hi!" target="_blank">email us</a></p>
-
-      <code></code>
+	<a href="https://www.facebook.com/iosddtu/" target="blank" ><i class="fa fa-facebook"  style="font-size:48px;" aria-hidden="true"></i></a>
+	<a href="https://twitter.com/iosoftwared" target="blank" ><i class="fa fa-twitter" style="font-size:48px;" aria-hidden="true"></i></a>
+	<a href="https://github.com/IOSD" target="blank" ><i class="fa fa-github" style="font-size:48px;" aria-hidden="true"></i></a>
+	<a href="https://www.instagram.com/iosdofficial/" target="blank" ><i class="fa fa-instagram" style="font-size:48px;" aria-hidden="true"></i></a>
+	<a href="https://www.linkedin.com/company/iosd?trk=ppro_cprof" target="blank" ><i class="fa fa-linkedin" style="font-size:48px;"  aria-hidden="true"></i></a>
+	<a href="mailto: contact@iosd.tech"> <i class="fa fa-envelope" style="font-size:48px;" aria-hidden="true"></i></a>
     </div>
 
 
@@ -1135,10 +957,10 @@ recheckStreamingTime();
 </main>
 
 
-<div id="contTerminal" class="closedTerminal terminalsizeanimated" style="overflow:visible !important">
+<!--<div id="contTerminal" class="closedTerminal terminalsizeanimated" style="overflow:visible !important">
   <div id="onlineTerminal" contenteditable spellcheck="false"></div>
   <a href="#" onclick="launchJSTerminal();return false;" class="terminalHandle"></a>
-</div>
+</div>-->
 
 <!-- <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 <script
@@ -1151,6 +973,8 @@ recheckStreamingTime();
 <script src="static/js/scriptsbc8f.js?f=201411290200"></script>
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/terminal.js"></script>
+<script src="static/js/jquery.magnific-popup.js"></script>
+
 
 
 <script>
@@ -1161,94 +985,17 @@ recheckStreamingTime();
     return check;
   }
 
-  function setupGame() {
-return;
-    if( ! isMobile() && ! streamActive ) {
-      // Attack Of The Drones!
-      // There's no touch controls right now
-      // Don't start the game if the stream is active
-      var gameUrl = 'https://game.jsconfar.com/';
-
-      $.getScript(gameUrl+'/dist/attack_of_the_drones.js', function(){
-        Callbacks.onGameLoaded = function(){
-          $('.game-signup form').removeAttr('disabled');
-          $('#game-holder img.dancer').show();
-        };
-        initGame(gameUrl, 'static/game_assets/index.html');
-      });
-    }
-  }
+ 
 
 
-  function killGame() {
-    if( typeof Connection !== 'undefined' && Connection !== null ) {
-      Connection.disconnect();
-    }
-    if( typeof game !== 'undefined' && game !== null ) {
-      game.destroy();
-    }
-  }
+ 
 
-
-  function tryToStartGame() {
-    if( typeof Connection !== 'undefined' && Connection.connected ) {
-      document.querySelector('#game-overlay').style.display = 'none';
-
-      startGame( document.querySelector('.game-signup input[name=name]').value, {
-        onPlayerDead: function(player){
-
-          $('#game-over .share-twitter').attr('href', 'http://twitter.com/share?text='+ encodeURIComponent("I got "+ player.lifeScore +" points in the #JSConfAr game! Join me at") +"&url=https://www.jsconfar.com" );
-          $('#game-over .share-facebook').attr('href', 'http://www.facebook.com/sharer.php?u=https://www.jsconfar.com&amp;t='+ encodeURIComponent("I got "+ player.lifeScore +" points in the JSConf Game!") );
-
-          ga( 'send', 'event', 'toys', 'game', 'highscore', player.lifeScore +' points');
-        },
-        onEnemyDead: function(enemy){
-          if( enemy.type === 'ufo' ) {
-            $('.planetarium').trigger('click');
-          }
-        }
-      } );
-
-      // Show the instructions
-      $('#game-instructions').delay(300).fadeIn(500).delay(5000).fadeOut(700);
-
-      ga( 'send', 'event', 'toys', 'game', 'start');
-
-      return false;
-    } else {
-      alert("Hold on a second. We are loading the game.")
-    }
-    return false;
-  }
+ 
 
 </script>
 
 
-<script>
-
-  if( ! streamActive ) {
-    setupGame();
-  }
-
-  // Recheck if the stream should be active
-  setInterval(function(){
-    var wasStreamActive = streamActive;
-
-    recheckStreamingTime();
-
-    // Stream Started
-    if( ! wasStreamActive && streamActive ) {
-      killGame();
-    }
-    // Stream Finished
-    else if( wasStreamActive && ! streamActive ) {
-      setupGame();
-    }
-  }, 1000);
-
-</script>
 
 </body>
 
-<!-- Mirrored from www.jsconfar.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jul 2017 10:14:42 GMT -->
 </html>
