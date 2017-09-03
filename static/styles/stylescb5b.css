@@ -2972,7 +2972,7 @@ body.rtl .row.faq .nav li a .fa {float: right; margin-right: 0; margin-left: 15p
   top: 50%;
   left: 50%;
   width: 100%;
-  max-width: 630px;
+  max-width: 100%;
   min-width: 320px;
   height: auto;
   z-index: 2000;
@@ -2995,6 +2995,7 @@ body.rtl .row.faq .nav li a .fa {float: right; margin-right: 0; margin-left: 15p
   visibility: hidden;
   top: 0;
   left: 0;
+  bottom: 0;
   z-index: 1000;
   opacity: 0;
   background: rgba(255, 191, 25, 0.8);
